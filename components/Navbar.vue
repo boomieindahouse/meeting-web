@@ -1,64 +1,37 @@
 <template>
     <nav class="bg-gray-900 py-4 px-6">
       <div class="container mx-auto flex justify-between items-center">
-        <!-- โลโก้ -->
         <nuxt-link to="/" class="text-yellow-400 font-bold text-xl">
           Meeting Creative
         </nuxt-link>
-  
-        <!-- เมนูนำทาง -->
         <ul class="flex space-x-6">
           <li>
-            <nuxt-link
-              to="/"
-              class="text-white hover:text-yellow-400"
-              :class="{ 'text-yellow-400 font-bold': isActive('/') }"
-            >
+            <nuxt-link to="/" class="text-white hover:text-yellow-400">
               Home
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link
-              to="/web-design"
-              class="text-white hover:text-yellow-400"
-              :class="{ 'text-yellow-400 font-bold': isActive('/web-design') }"
-            >
+            <nuxt-link to="/web-design" class="text-white hover:text-yellow-400">
               Web Design
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link
-              to="/graphic-design"
-              class="text-white hover:text-yellow-400"
-              :class="{ 'text-yellow-400 font-bold': isActive('/graphic-design') }"
-            >
+            <nuxt-link to="/graphic-design" class="text-white hover:text-yellow-400">
               Graphic Design
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link
-              to="/network-service"
-              class="text-white hover:text-yellow-400"
-              :class="{ 'text-yellow-400 font-bold': isActive('/network-service') }"
-            >
+            <nuxt-link to="/network-service" class="text-white hover:text-yellow-400">
               Network Service
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link
-              to="/our-team"
-              class="text-white hover:text-yellow-400"
-              :class="{ 'text-yellow-400 font-bold': isActive('/our-team') }"
-            >
+            <nuxt-link to="/our-team" class="text-white hover:text-yellow-400">
               Our Team
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link
-              to="/contact"
-              class="text-white hover:text-yellow-400"
-              :class="{ 'text-yellow-400 font-bold': isActive('/contact') }"
-            >
+            <nuxt-link to="/contact" class="text-white hover:text-yellow-400">
               Contact
             </nuxt-link>
           </li>
@@ -66,16 +39,4 @@
       </div>
     </nav>
   </template>
-  
-  <script setup>
-  import { useRoute } from '#app' // ใช้ useRoute จาก Nuxt 3
-  
-  // ฟังก์ชันตรวจสอบ Active Link
-  const route = useRoute();
-  const isActive = (path) => route.path === path;
-  </script>
-  
-  <style scoped>
-  /* เพิ่มการกำหนดสไตล์เพิ่มเติมหากจำเป็น */
-  </style>
   

@@ -1,3 +1,6 @@
 <template>
-    <h1 class="text-3xl font-bold underline hover:text-red-800">Hello world</h1>
-</template>
+    <div>
+      <h1 class="text-3xl font-bold text-center">Welcome to Meeting Creative</h1>
+      <h1 class="text-red-500">Testing Navbar</h1>
+    </div>
+  </template>

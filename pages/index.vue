@@ -1,6 +1,10 @@
 <template>
     <div>
-      <h1 class="text-3xl font-bold text-center">Welcome to Meeting Creative</h1>
-      <h1 class="text-red-500">Testing Navbar</h1>
+      <HeroSection />
     </div>
 </template>
+
+<script setup>
+// นำเข้า HeroSection จาก components/sections
+import HeroSection from '@/components/sections/HeroSection.vue'
+</script>

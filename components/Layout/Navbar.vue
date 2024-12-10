@@ -68,7 +68,7 @@
 </template>
 
 <script setup>
-import { useRoute } from '#app' // ใช้ useRoute จาก Nuxt 3
+import { useRoute } from '#app' 
 
 // ฟังก์ชันตรวจสอบ Active Link
 const route = useRoute();

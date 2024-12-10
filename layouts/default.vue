@@ -1,14 +1,12 @@
 <template>
     <div>
-      <!-- เรียกใช้ Navbar ในทุกหน้า -->
+      <!-- ใส่ Navbar ที่นี่ -->
       <Navbar />
-      <!-- เนื้อหาของหน้าที่จะถูกแสดงที่นี่ -->
+      <!-- เนื้อหาของหน้า -->
       <NuxtPage />
     </div>
   </template>
   
   <script setup>
-  // การ import Navbar
-  import Navbar from '@/components/Navbar.vue'
+  import Navbar from '@/components/Layout/Navbar.vue'
   </script>
-  

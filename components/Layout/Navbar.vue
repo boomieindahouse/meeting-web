@@ -2,7 +2,7 @@
   <nav class="bg-gray-900 py-4 px-6">
     <div class="container mx-auto flex justify-between items-center">
       <!-- โลโก้ -->
-      <nuxt-link to="/" class="text-yellow-400 font-bold text-xl">
+      <nuxt-link to="/" class="text-gold font-bold text-xl">
         Meeting Creative
       </nuxt-link>
 

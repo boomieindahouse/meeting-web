@@ -6,73 +6,44 @@
         Meeting Creative
       </nuxt-link>
 
+      <!-- ปุ่ม Hamburger สำหรับ Mobile -->
+      <button
+        @click="toggleMenu"
+        class="lg:hidden text-white focus:outline-none"
+      >
+        <span class="sr-only">Open Menu</span>
+        <!-- แสดง ☰ ถ้าเมนูปิด หรือ ✖ ถ้าเมนูเปิด -->
+        <span v-if="!isMenuOpen" class="text-2xl">☰</span>
+        <span v-if="isMenuOpen" class="text-2xl">✖</span>
+      </button>
+
       <!-- เมนูนำทาง -->
-      <ul class="flex space-x-10">
-        <li>
-          <nuxt-link
-            to="/"
-            class="text-white hover:text-gold"
-            :class="{ 'text-gold font-bold': isActive('/') }"
-          >
-            Home
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link
-            to="/webdesign"
-            class="text-white hover:text-gold"
-            :class="{ 'text-gold font-bold': isActive('/webdesign') }"
-          >
-            Web Design
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link
-            to="/graphic-design"
-            class="text-white hover:text-gold"
-            :class="{ 'text-gold font-bold': isActive('/graphic-design') }"
-          >
-            Graphic Design
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link
-            to="/network-service"
-            class="text-white hover:text-gold"
-            :class="{ 'text-gold font-bold': isActive('/network-service') }"
-          >
-            Network Service
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link
-            to="/our-team"
-            class="text-white hover:text-gold"
-            :class="{ 'text-gold font-bold': isActive('/our-team') }"
-          >
-            Our Team
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link
-            to="/contact"
-            class="text-white hover:text-gold"
-            :class="{ 'text-gold font-bold': isActive('/contact') }"
-          >
-            Contact
-          </nuxt-link>
-        </li>
+      <ul
+        :class="{
+          'hidden lg:flex': !isMenuOpen,
+          'flex flex-col space-y-4 absolute top-16 left-0 w-full bg-navbg p-4': isMenuOpen
+        }"
+        class="lg:space-x-10 lg:flex-row"
+      >
+        <li class="py-2 text-center"><nuxt-link to="/" class="text-white hover:text-gold">Home</nuxt-link></li>
+        <li class="py-2 text-center"><nuxt-link to="/webdesign" class="text-white hover:text-gold">Web Design</nuxt-link></li>
+        <li class="py-2 text-center"><nuxt-link to="/graphic-design" class="text-white hover:text-gold">Graphic Design</nuxt-link></li>
+        <li class="py-2 text-center"><nuxt-link to="/network-service" class="text-white hover:text-gold">Network Service</nuxt-link></li>
+        <li class="py-2 text-center"><nuxt-link to="/our-team" class="text-white hover:text-gold">Our Team</nuxt-link></li>
+        <li class="py-2 text-center"><nuxt-link to="/contact" class="text-white hover:text-gold">Contact</nuxt-link></li>
       </ul>
     </div>
   </nav>
 </template>
 
 <script setup>
-import { useRoute } from '#app' 
+import { ref } from 'vue'
 
-// ฟังก์ชันตรวจสอบ Active Link
-const route = useRoute();
-const isActive = (path) => route.path === path;
+const isMenuOpen = ref(false);
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+}
 </script>
 
 <style scoped>

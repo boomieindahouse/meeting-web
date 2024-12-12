@@ -10,6 +10,8 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@iconify/vue": "^4.2.0",
+    "font-awesome": "^4.7.0",
     "nuxt": "^3.14.1592",
     "nuxt-swiper": "^2.0.0",
     "swiper": "^8.4.7",

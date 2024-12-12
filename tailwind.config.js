@@ -11,6 +11,8 @@ module.exports = {
     extend: {
       colors: {
         gold: '#DEC07B',
+        primarybg: '#2F2F2F',
+        navbg: '#1D1D1D',
       },
     },
   },

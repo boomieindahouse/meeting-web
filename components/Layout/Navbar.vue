@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-gray-900 py-4 px-6">
+  <nav class="bg-navbg py-4 px-6">
     <div class="container mx-auto flex justify-between items-center">
       <!-- โลโก้ -->
       <nuxt-link to="/" class="text-gold font-bold text-xl">
@@ -11,8 +11,8 @@
         <li>
           <nuxt-link
             to="/"
-            class="text-white hover:text-yellow-400"
-            :class="{ 'text-yellow-400 font-bold': isActive('/') }"
+            class="text-white hover:text-gold"
+            :class="{ 'text-gold font-bold': isActive('/') }"
           >
             Home
           </nuxt-link>
@@ -20,8 +20,8 @@
         <li>
           <nuxt-link
             to="/webdesign"
-            class="text-white hover:text-yellow-400"
-            :class="{ 'text-yellow-400 font-bold': isActive('/webdesign') }"
+            class="text-white hover:text-gold"
+            :class="{ 'text-gold font-bold': isActive('/webdesign') }"
           >
             Web Design
           </nuxt-link>
@@ -29,8 +29,8 @@
         <li>
           <nuxt-link
             to="/graphic-design"
-            class="text-white hover:text-yellow-400"
-            :class="{ 'text-yellow-400 font-bold': isActive('/graphic-design') }"
+            class="text-white hover:text-gold"
+            :class="{ 'text-gold font-bold': isActive('/graphic-design') }"
           >
             Graphic Design
           </nuxt-link>
@@ -38,8 +38,8 @@
         <li>
           <nuxt-link
             to="/network-service"
-            class="text-white hover:text-yellow-400"
-            :class="{ 'text-yellow-400 font-bold': isActive('/network-service') }"
+            class="text-white hover:text-gold"
+            :class="{ 'text-gold font-bold': isActive('/network-service') }"
           >
             Network Service
           </nuxt-link>
@@ -47,8 +47,8 @@
         <li>
           <nuxt-link
             to="/our-team"
-            class="text-white hover:text-yellow-400"
-            :class="{ 'text-yellow-400 font-bold': isActive('/our-team') }"
+            class="text-white hover:text-gold"
+            :class="{ 'text-gold font-bold': isActive('/our-team') }"
           >
             Our Team
           </nuxt-link>
@@ -56,8 +56,8 @@
         <li>
           <nuxt-link
             to="/contact"
-            class="text-white hover:text-yellow-400"
-            :class="{ 'text-yellow-400 font-bold': isActive('/contact') }"
+            class="text-white hover:text-gold"
+            :class="{ 'text-gold font-bold': isActive('/contact') }"
           >
             Contact
           </nuxt-link>

@@ -7,7 +7,7 @@
       </nuxt-link>
 
       <!-- เมนูนำทาง -->
-      <ul class="flex space-x-6">
+      <ul class="flex space-x-10">
         <li>
           <nuxt-link
             to="/"

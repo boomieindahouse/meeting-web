@@ -3,7 +3,7 @@
       <div class="container mx-auto flex flex-col lg:flex-col xl:flex-col 2xl:flex-col items-center sm:items-start relative z-10 gap-10">
         <!-- ส่วนข้อความ -->
         <div class="w-full text-center lg:text-center">
-          <h1 class="text-5xl sm:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-grad-text">
+          <h1 class="text-5xl sm:text-4xl font-semibold mb-4 text-transparent bg-clip-text bg-grad-text">
             Web Design Services
           </h1>
           <p class="mb-8 text-lg sm:text-xl">

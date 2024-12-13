@@ -1,7 +1,7 @@
 <template>
     <section class="bg-secondbg text-white py-16 px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24">
       <div class="container mx-auto text-center">
-        <h2 class="text-4xl sm:text-3xl font-regular mb-10">Our Services</h2>
+        <h2 class="text-4xl sm:text-3xl font-semibold mb-10 text-transparent bg-clip-text bg-grad-text">Our Services</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           <!-- Web Design -->
           <div class="service-card bg-white text-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all">

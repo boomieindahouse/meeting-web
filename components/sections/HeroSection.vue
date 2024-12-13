@@ -1,8 +1,8 @@
 <template>
   <section class="bg-primarybg text-white py-10 sm:py-10 relative overflow-hidden">
-    <div class="container mx-auto flex flex-col-reverse sm:flex-row items-center relative z-10">
+    <div class="container mx-auto flex flex-col sm:flex-row items-center relative z-10">
       <!-- ส่วนข้อความ -->
-      <div class="w-full sm:w-1/2 text-center sm:text-left">
+      <div class="w-full sm:w-1/2 text-center sm:text-left sm:order-1">
         <h1 class="text-4xl sm:text-5xl font-bold mb-4">From Virtual Ideas</h1>
         <h1 class="text-4xl sm:text-5xl font-bold mb-4">
           To Real
@@ -14,12 +14,10 @@
           เราพร้อมที่จะดูแล และอยู่เคียงข้างคุณ <br />
           เพื่อให้ธุรกิจของคุณเติบโตบนโลกออนไลน์
         </p>
-        <div
-          class="flex flex-col sm:flex-row justify-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-4"
-        >
+        <div class="flex flex-col sm:flex-row justify-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
           <a
             href="/contact"
-            class="bg-turqoise hover:bg-green-600 text-white font-medium py-2 px-4 rounded-md"
+            class="bg-turqoise hover:bg-opacity-60 text-white font-medium py-2 px-4 rounded-md"
           >
             Line Contact
           </a>
@@ -33,7 +31,7 @@
       </div>
 
       <!-- ส่วนรูปภาพ Swiper -->
-      <div class="w-full sm:w-1/2 absolute sm:relative top-0 right-0">
+      <div class="w-full sm:w-1/2 sm:order-2 mt-10 sm:mt-0">
         <Swiper
           :modules="modules"
           :slides-per-view="1"
@@ -50,7 +48,7 @@
             <img
               :src="image"
               :alt="`Project ${index + 1}`"
-              class="w-full h-auto object-cover object-right-top"
+              class="w-full h-auto object-cover object-center"
             />
           </SwiperSlide>
         </Swiper>
@@ -60,7 +58,7 @@
     <!-- Layer PNG -->
     <div class="absolute inset-0">
       <img
-        src="~/assets/img/layer.png"
+        src="~/assets/img/layer1.png"
         alt="Layer Image"
         class="w-full h-full object-cover"
       />

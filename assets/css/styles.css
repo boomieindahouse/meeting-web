@@ -13,3 +13,18 @@ body {
     @apply text-[25px];
   }
 }
+
+@layer components {
+  :root {
+    --swiper-pagination-color: rgb(222, 192, 123); /* กำหนดสีที่ต้องการ */
+  }
+
+  .swiper-pagination-bullet {
+    background-color: var(--swiper-pagination-color); /* ใช้ตัวแปรสี */
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--swiper-pagination-color); /* ใช้ตัวแปรสี */
+  }
+}
+

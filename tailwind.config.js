@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         gold: '#DEC07B',
         primarybg: '#2F2F2F',
+        secondbg: '#252525',
         navbg: '#1D1D1D',
         turqoise: '#228897',
       },

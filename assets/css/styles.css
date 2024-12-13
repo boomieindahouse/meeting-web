@@ -10,7 +10,7 @@ body {
 
 @layer base {
   p {
-    @apply text-[25px];
+    @apply text-[22px];
   }
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-primarybg text-white py-10 sm:py-10 relative overflow-hidden">
+  <section class="bg-primarybg text-white py-10 sm:py-20 relative overflow-hidden">
     <div class="container mx-auto flex flex-col sm:flex-row items-center relative z-10">
       <!-- ส่วนข้อความ -->
       <div class="w-full sm:w-1/2 text-center sm:text-left sm:order-1">
@@ -16,16 +16,16 @@
         </p>
         <div class="flex flex-col sm:flex-row justify-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
           <a
-            href="/contact"
+            href="https://lin.ee/gYvfSPi"
             class="bg-turqoise hover:bg-opacity-60 text-white font-medium py-2 px-4 rounded-md"
           >
-            Line Contact
+            ติดต่อแอดไลน์
           </a>
           <a
-            href="/contact"
+            href="tel:064-459-9997"
             class="bg-white hover:bg-gray-200 text-gray-900 font-medium py-2 px-4 rounded-md"
           >
-            Telephone
+            โทรหาเรา
           </a>
         </div>
       </div>
@@ -70,19 +70,19 @@
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination, Autoplay } from 'swiper'
 
-// Import Swiper styles
+// Import Swiper
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 
-// Placeholder images using placehold.co
+// Img placeholder
 const projectImages = [
-  'https://placehold.co/800x600?text=Project+1',
-  'https://placehold.co/800x600?text=Project+2',
-  'https://placehold.co/800x600?text=Project+3',
-  'https://placehold.co/800x600?text=Project+4',
-  'https://placehold.co/800x600?text=Project+5'
+  'https://placehold.co/800x500?text=Project+1',
+  'https://placehold.co/800x500?text=Project+2',
+  'https://placehold.co/800x500?text=Project+3',
+  'https://placehold.co/800x500?text=Project+4',
+  'https://placehold.co/800x500?text=Project+5'
 ]
 
 const modules = [Navigation, Pagination, Autoplay]

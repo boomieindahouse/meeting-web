@@ -9,7 +9,7 @@
               <img src="https://via.placeholder.com/80x80?text=Web+Design" alt="Web Design" class="mx-auto"/>
             </div>
             <h3 class="text-2xl font-semibold mb-2">Web Design</h3>
-            <p class="text-lg">รับออกแบบเว็บไซต์ ดีไซน์เว็บ ทำเว็บ Web Development ด้วยมาตรฐานสากล รองรับการแสดงทั้งบนมือถือ และ Desktop พร้อมให้บริการทั้งในรูปแบบเว็บส่วนตัว (Web Blog) เว็บร้านค้า SME เว็บองค์กร บริษัท(Corporate) ห้างร้าน รวมไปถึง E-Commerce</p>
+            <p class="text-lg">ออกแบบเว็บไซต์ ดีไซน์เว็บ ทำเว็บ Web Development ด้วยมาตรฐานสากล รองรับการแสดงทั้งบนมือถือ และ Desktop พร้อมให้บริการทั้งในรูปแบบเว็บส่วนตัว (Web Blog) เว็บร้านค้า SME เว็บองค์กร บริษัท(Corporate) ห้างร้าน รวมไปถึง E-Commerce</p>
           </div>
   
           <!-- Graphic Design -->

@@ -21,6 +21,7 @@ body {
 
   .swiper-pagination-bullet {
     background-color: var(--swiper-pagination-color); /* ใช้ตัวแปรสี */
+    margin-top: 50px;
   }
 
   .swiper-pagination-bullet-active {

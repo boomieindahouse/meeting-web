@@ -42,7 +42,7 @@
             delay: 3000,
             disableOnInteraction: false
           }"
-          class="w-full h-full"
+          class="w-full h-full rounded-lg"
         >
           <SwiperSlide v-for="(image, index) in projectImages" :key="index">
             <img

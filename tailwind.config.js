@@ -17,7 +17,8 @@ module.exports = {
         turqoise: '#228897',
       },
       backgroundImage: {
-        'gradient-text': 'linear-gradient(to right, #238795 0%, #ECD400 100%)'
+        'gradient-text': 'linear-gradient(to right, #238795 0%, #ECD400 100%)',
+        'grad-text': 'linear-gradient(to right, #50B4C2 40%, #ECD400 70%)'
       }
     },
   },

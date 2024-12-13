@@ -31,32 +31,22 @@
         class="lg:space-x-10 lg:flex-row"
       >
         <li class="py-2 text-center">
-          <nuxt-link to="/" class="text-white hover:text-gold">Home</nuxt-link>
+          <router-link to="/" active-class="text-gold" exact class="text-white hover:text-gold">Home</router-link>
         </li>
         <li class="py-2 text-center">
-          <nuxt-link to="/webdesign" class="text-white hover:text-gold"
-            >Web Design</nuxt-link
-          >
+          <router-link to="/webdesign" active-class="text-gold" exact class="text-white hover:text-gold">Web Design</router-link>
         </li>
         <li class="py-2 text-center">
-          <nuxt-link to="/graphic-design" class="text-white hover:text-gold"
-            >Graphic Design</nuxt-link
-          >
+          <router-link to="/graphic-design" active-class="text-gold" exact class="text-white hover:text-gold">Graphic Design</router-link>
         </li>
         <li class="py-2 text-center">
-          <nuxt-link to="/network-service" class="text-white hover:text-gold"
-            >Network Service</nuxt-link
-          >
+          <router-link to="/network-service" active-class="text-gold" exact class="text-white hover:text-gold">Network Service</router-link>
         </li>
         <li class="py-2 text-center">
-          <nuxt-link to="/our-team" class="text-white hover:text-gold"
-            >Our Team</nuxt-link
-          >
+          <router-link to="/our-team" active-class="text-gold" exact class="text-white hover:text-gold">Our Team</router-link>
         </li>
         <li class="py-2 text-center">
-          <nuxt-link to="/contact" class="text-white hover:text-gold"
-            >Contact</nuxt-link
-          >
+          <router-link to="/contact" active-class="text-gold" exact class="text-white hover:text-gold">Contact</router-link>
         </li>
       </ul>
     </div>
@@ -76,5 +66,9 @@ const toggleMenu = () => {
 <style scoped>
 ul {
   z-index: 100; /* เพิ่ม z-index เพื่อให้เมนูไม่ถูกปิดทับ */
+}
+
+.router-link-exact-active {
+  color: #DEC07B; /* เลือกสี gold */
 }
 </style>

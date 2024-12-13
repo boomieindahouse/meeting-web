@@ -1,48 +1,90 @@
 <template>
-    <section class="relative">
-      <div class="flex space-x-4 overflow-x-auto">
-        <div
-          class="project-container"
-          v-for="(image, index) in images"
-          :key="index"
-          :ref="el => imageRefs[index] = el"
-        >
-          <img :src="image" alt="Project Image" class="project-image" />
+    <section class="bg-primarybg text-white py-10 sm:py-20 relative overflow-hidden">
+      <div class="container mx-auto flex flex-col lg:flex-col xl:flex-col 2xl:flex-col items-center sm:items-start relative z-10 gap-10">
+        <!-- ส่วนข้อความ -->
+        <div class="w-full text-center lg:text-center">
+          <h1 class="text-5xl sm:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-grad-text">Web Design Services</h1>
+          <p class="mb-8 text-lg sm:text-xl">
+            เรามีบริการออกแบบเว็บไซต์ที่ตอบโจทย์ทั้งในแง่ของดีไซน์ที่สวยงาม <br>และการใช้งานที่สะดวกสบายสำหรับทุกธุรกิจไม่ว่าจะขนาดเล็กหรือขนาดใหญ่
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <a
+              href="/webdesign"
+              class="bg-white hover:bg-opacity-70 text-black font-medium py-2 px-4 rounded-md"
+            >
+              ดูผลงานของเรา
+            </a>
+          </div>
+        </div>
+  
+        <!-- ส่วนรูปภาพ Swiper -->
+        <div class="w-full mt-10">
+          <Swiper
+            :modules="modules"
+            :slides-per-view="3"
+            :centered-slides="true"
+            :space-between="30"
+            :effect="'coverflow'"
+            :pagination="{ clickable: true }"
+            :autoplay="{
+              delay: 3000,
+              disableOnInteraction: false
+            }"
+            class="w-full h-full"
+          >
+            <SwiperSlide v-for="(image, index) in projectImages" :key="index">
+              <img
+                :src="image"
+                :alt="`Web Design ${index + 1}`"
+                class="w-full h-auto object-cover object-center rounded-lg"
+              />
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </section>
   </template>
   
   <script setup>
-  import { ref, onMounted } from 'vue';
+  import { Swiper, SwiperSlide } from 'swiper/vue'
+  import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper'
   
-  const images = ref([
-  require('../../assets/img/11.png'),
-  require('@/assets/img/image2.jpg'),
-  require('@/assets/img/image3.jpg'),
-  require('@/assets/img/image4.jpg'),
-  require('@/assets/img/image5.jpg')
-]);
+  // Import Swiper styles
+  import 'swiper/css'
+  import 'swiper/css/navigation'
+  import 'swiper/css/pagination'
+  import 'swiper/css/autoplay'
+  import 'swiper/css/effect-coverflow'
   
-  onMounted(() => {
-    window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-      imageRefs.value.forEach((imageRef, index) => {
-        if (imageRef) {
-          imageRef.style.transform = `translateX(${scrollY * 0.1 * (index + 1)}px)`;
-        }
-      });
-    });
-  });
+  // Img placeholder
+  const projectImages = [
+    'https://placehold.co/1000x800?text=Web+Design+1',
+    'https://placehold.co/1000x800?text=Web+Design+2',
+    'https://placehold.co/1000x800?text=Web+Design+3',
+    'https://placehold.co/1000x800?text=Web+Design+4',
+    'https://placehold.co/1000x800?text=Web+Design+5',
+    'https://placehold.co/1000x800?text=Web+Design+6',
+    'https://placehold.co/1000x800?text=Web+Design+7',
+    'https://placehold.co/1000x800?text=Web+Design+8'
+  ]
+  
+  const modules = [Navigation, Pagination, Autoplay, EffectCoverflow]
   </script>
   
   <style scoped>
-  .project-container {
-    position: relative;
-    min-width: 300px;
+  /* เรียงในแนว column สำหรับทุกขนาดหน้าจอ */
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* เพิ่มระยะห่างระหว่างส่วนข้อความและรูปภาพ */
   }
-  .project-image {
-    transition: transform 0.2s ease;
+  
+  /* ขนาดหน้าจอ lg และใหญ่กว่า */
+  @media (min-width: 1024px) {
+    .container {
+      flex-direction: column; /* ข้อความอยู่ด้านบน รูปภาพอยู่ด้านล่าง */
+      gap: 2rem; /* เพิ่มระยะห่างระหว่างข้อความและรูปภาพ */
+    }
   }
   </style>
   

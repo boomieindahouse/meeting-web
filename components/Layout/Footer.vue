@@ -1,38 +1,67 @@
 <template>
     <footer class="bg-secondbg text-white py-8">
-      <div class="container mx-auto text-center">
-        <!-- Logo และชื่อแบรนด์ -->
-        <div class="flex flex-col items-center mb-4">
-          <div class="flex items-center space-x-2">
-            <img src="../../assets/img/logo2.png" alt="Logo" class="w-40 h-">
+      <div class="container mx-auto">
+        <!-- Row Layout -->
+        <div class="flex items-center justify-between space-x-8">
+          <!-- ส่วนที่ 1: Logo -->
+          <div class="flex-shrink-0">
+            <img src="../../assets/img/logo2.png" alt="Logo" class="w-40" />
           </div>
-          <p class="text-lg mt-2">"Meeting Your Vision, with Creative Solutions"</p>
-        </div>
   
-        <!-- Social Icons -->
-        <div class="flex justify-center space-x-4 mb-6">
-          <a href="#" class="text-gray-300 hover:text-white text-2xl">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="#" class="text-gray-300 hover:text-white text-2xl">
-            <i class="fab fa-line"></i>
-          </a>
-          <a href="#" class="text-gray-300 hover:text-white text-2xl">
-            <i class="fas fa-phone"></i>
-          </a>
-          <a href="#" class="text-gray-300 hover:text-white text-2xl">
-            <i class="fas fa-envelope"></i>
-          </a>
+          <!-- ส่วนที่ 2: Quote -->
+          <div class="flex-1 text-center">
+            <p class="text-lg">"Meeting Your Vision, with Creative Solutions"</p>
+          </div>
+  
+          <!-- ส่วนที่ 3: Social Buttons -->
+          <div class="flex space-x-4">
+            <a href="#" class="icon-button">
+              <Icon icon="fa-brands:facebook-f" />
+            </a>
+            <a href="#" class="icon-button">
+              <Icon icon="fa-brands:line" />
+            </a>
+            <a href="#" class="icon-button">
+              <Icon icon="fa-solid:phone" />
+            </a>
+            <a href="#" class="icon-button">
+              <Icon icon="fa-solid:envelope" />
+            </a>
+          </div>
         </div>
   
         <!-- Divider -->
-        <hr class="border-gray-600 mb-4">
+        <hr class="border-gray-600 my-6" />
   
         <!-- Copyright -->
-        <p class="text-sm text-gray-400">
-          &copy; Copyright 2024 Meeting Creative All rights reserved.
-        </p>
+        <div class="text-center">
+          <p class="text-sm text-gray-400">
+            &copy; Copyright 2024 Meeting Creative All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   </template>
+  
+  <script setup>
+  import { Icon } from '@iconify/vue'
+  </script>
+  
+  <style scoped>
+  .icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px; /* ความกว้างของวงกลม */
+    height: 35px; /* ความสูงของวงกลม */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    background-color: #626262; /* เปลี่ยนสีพื้นหลัง */
+    color: white; /* เปลี่ยนสีไอคอน */
+    transition: background-color 0.3s ease;
+  }
+  
+  .icon-button:hover {
+    background-color: #228897; /* เปลี่ยนสีเมื่อ hover */
+  }
+  </style>
   

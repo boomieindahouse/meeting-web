@@ -1,7 +1,7 @@
 <template>
     <footer class="bg-secondbg text-white py-8">
       <div class="container mx-auto">
-        <!-- Row Layout -->
+        
         <div class="flex items-center justify-between space-x-8">
           <!-- ส่วนที่ 1: Logo -->
           <div class="flex-shrink-0">
@@ -13,7 +13,7 @@
             <p class="text-lg">"Meeting Your Vision, with Creative Solutions"</p>
           </div>
   
-          <!-- ส่วนที่ 3: Social Buttons -->
+          <!-- Social Buttons -->
           <div class="flex space-x-4">
             <a href="https://www.facebook.com/meetingcreative" class="icon-button" target="_blank">
               <Icon icon="fa-brands:facebook-f" />
@@ -52,16 +52,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35px; /* ความกว้างของวงกลม */
-    height: 35px; /* ความสูงของวงกลม */
-    border-radius: 50%; /* ทำให้เป็นวงกลม */
-    background-color: #626262; /* เปลี่ยนสีพื้นหลัง */
-    color: white; /* เปลี่ยนสีไอคอน */
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%; 
+    background-color: #626262; 
+    color: white;
     transition: background-color 0.3s ease;
   }
   
   .icon-button:hover {
-    background-color: #228897; /* เปลี่ยนสีเมื่อ hover */
+    background-color: #228897;
   }
   </style>
   

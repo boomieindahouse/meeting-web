@@ -1,7 +1,7 @@
 <template>
   <nav class="bg-navbg py-1 px-6">
     <div class="container mx-auto flex justify-between items-center">
-      <!-- โลโก้ -->
+      <!-- Logo -->
       <nuxt-link to="/" class="text-gold font-bold text-xl">
         <img
           src="../../assets/img/logo2.png"
@@ -10,18 +10,17 @@
         />
       </nuxt-link>
 
-      <!-- ปุ่ม Hamburger สำหรับ Mobile -->
+      <!-- Ham button in sm res -->
       <button
         @click="toggleMenu"
         class="lg:hidden text-white focus:outline-none"
       >
         <span class="sr-only">Open Menu</span>
-        <!-- แสดง ☰ ถ้าเมนูปิด หรือ ✖ ถ้าเมนูเปิด -->
         <span v-if="!isMenuOpen" class="text-2xl">☰</span>
         <span v-if="isMenuOpen" class="text-2xl">✖</span>
       </button>
 
-      <!-- เมนูนำทาง -->
+      <!-- Nav menu -->
       <ul
         :class="{
           'hidden lg:flex': !isMenuOpen,
@@ -65,10 +64,10 @@ const toggleMenu = () => {
 
 <style scoped>
 ul {
-  z-index: 100; /* เพิ่ม z-index เพื่อให้เมนูไม่ถูกปิดทับ */
+  z-index: 100;
 }
 
 .router-link-exact-active {
-  color: #DEC07B; /* เลือกสี gold */
+  color: #DEC07B;
 }
 </style>

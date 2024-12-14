@@ -79,16 +79,16 @@ import "swiper/css/effect-coverflow";
 
 // Img placeholder
 const projectImages = [
-  "https://placehold.co/1100x800?text=Web+Design+1",
-  "https://placehold.co/1100x800?text=Web+Design+2",
-  "https://placehold.co/1100x800?text=Web+Design+3",
-  "https://placehold.co/1100x800?text=Web+Design+4",
-  "https://placehold.co/1100x800?text=Web+Design+5",
-  "https://placehold.co/1100x800?text=Web+Design+6",
-  "https://placehold.co/1100x800?text=Web+Design+7",
-  "https://placehold.co/1100x800?text=Web+Design+8",
-  "https://placehold.co/1100x800?text=Web+Design+9",
-  "https://placehold.co/1100x800?text=Web+Design+10",
+  "https://backend.meeting.co.th/storage/5282/65604b75e2c33_653b7730dd6d4_colon-p.webp",
+  "https://backend.meeting.co.th/storage/5281/65604b6f1cc44_653b77d2b04e8_taifah.webp",
+  "https://backend.meeting.co.th/storage/6407/65b476d61ffcf_Candy.webp",
+  "https://backend.meeting.co.th/storage/6408/65b49f06821e3_2.webp",
+  "https://backend.meeting.co.th/storage/8018/66692fb250228_singha.webp",
+  "https://backend.meeting.co.th/storage/8201/667ffed3bb1a7_mehay.webp",
+  "https://backend.meeting.co.th/storage/5292/65604bc113062_653b7f7d7c7ef_you2play.webp",
+  "https://backend.meeting.co.th/storage/5646/6594dd5742e41_screencapture-127-0-0-1-8000-2024-01-03-10_34_18.webp",
+  "https://backend.meeting.co.th/storage/5636/6593d36a8c313_httpspassionfooddelivery.com_7_11zon.webp",
+  "https://backend.meeting.co.th/storage/5631/6593d0cf21bc1_httpschalisapoolvilla.com_20_11zon.webp",
 ];
 
 const modules = [Navigation, Pagination, Autoplay, EffectCoverflow];

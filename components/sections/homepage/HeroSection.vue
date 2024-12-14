@@ -3,12 +3,13 @@
     <div class="container mx-auto flex flex-col sm:flex-row items-center relative z-10">
       <!-- context hero section -->
       <div class="w-full sm:w-1/2 text-center sm:text-left sm:order-1">
-        <h1 class="text-4xl sm:text-5xl font-bold mb-4">From Virtual Ideas</h1>
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4"><span class="text-transparent bg-clip-text bg-gradient-text">Meeting</span> Your Vision</h1>
         <h1 class="text-4xl sm:text-5xl font-bold mb-4">
-          To Real
+          with
           <span class="text-transparent bg-clip-text bg-gradient-text">
-            Achievements
+            Creative
           </span>
+          Solutions
         </h1>
         <p class="mb-8">
           เราพร้อมที่จะดูแล และอยู่เคียงข้างคุณ <br />

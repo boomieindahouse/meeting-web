@@ -1,7 +1,7 @@
 <template>
   <section class="bg-primarybg text-white py-10 sm:py-20 relative overflow-hidden">
     <div class="container mx-auto flex flex-col sm:flex-row items-center relative z-10">
-      <!-- ส่วนข้อความ -->
+      <!-- context hero section -->
       <div class="w-full sm:w-1/2 text-center sm:text-left sm:order-1">
         <h1 class="text-4xl sm:text-5xl font-bold mb-4">From Virtual Ideas</h1>
         <h1 class="text-4xl sm:text-5xl font-bold mb-4">
@@ -30,7 +30,7 @@
         </div>
       </div>
 
-      <!-- ส่วนรูปภาพ Swiper -->
+      <!-- sample recent work swiper -->
       <div class="w-full sm:w-1/2 sm:order-2 mt-10 sm:mt-0">
         <Swiper
           :modules="modules"
@@ -55,7 +55,7 @@
       </div>
     </div>
 
-    <!-- Layer PNG -->
+    <!-- layer bg PNG -->
     <div class="absolute inset-0">
       <img
         src="~/assets/img/layer1.png"
@@ -70,13 +70,11 @@
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination, Autoplay } from 'swiper'
 
-// Import Swiper
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 
-// Img placeholder
 const projectImages = [
   'https://placehold.co/800x500?text=Project+1',
   'https://placehold.co/800x500?text=Project+2',

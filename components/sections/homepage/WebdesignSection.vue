@@ -79,14 +79,16 @@ import "swiper/css/effect-coverflow";
 
 // Img placeholder
 const projectImages = [
-  "https://placehold.co/1000x800?text=Web+Design+1",
-  "https://placehold.co/1000x800?text=Web+Design+2",
-  "https://placehold.co/1000x800?text=Web+Design+3",
-  "https://placehold.co/1000x800?text=Web+Design+4",
-  "https://placehold.co/1000x800?text=Web+Design+5",
-  "https://placehold.co/1000x800?text=Web+Design+6",
-  "https://placehold.co/1000x800?text=Web+Design+7",
-  "https://placehold.co/1000x800?text=Web+Design+8",
+  "https://placehold.co/1100x800?text=Web+Design+1",
+  "https://placehold.co/1100x800?text=Web+Design+2",
+  "https://placehold.co/1100x800?text=Web+Design+3",
+  "https://placehold.co/1100x800?text=Web+Design+4",
+  "https://placehold.co/1100x800?text=Web+Design+5",
+  "https://placehold.co/1100x800?text=Web+Design+6",
+  "https://placehold.co/1100x800?text=Web+Design+7",
+  "https://placehold.co/1100x800?text=Web+Design+8",
+  "https://placehold.co/1100x800?text=Web+Design+9",
+  "https://placehold.co/1100x800?text=Web+Design+10",
 ];
 
 const modules = [Navigation, Pagination, Autoplay, EffectCoverflow];
@@ -97,7 +99,7 @@ const modules = [Navigation, Pagination, Autoplay, EffectCoverflow];
 .container {
   display: flex;
   flex-direction: column;
-  gap: 2rem; /* เพิ่มระยะห่างระหว่างส่วนข้อความและรูปภาพ */
+  gap: 2rem;
 }
 
 /* ขนาดหน้าจอ lg และใหญ่กว่า */

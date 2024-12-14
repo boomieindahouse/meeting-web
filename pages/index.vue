@@ -8,7 +8,7 @@
 
 <script setup>
 // นำเข้า HeroSection จาก components/sections
-import HeroSection from '@/components/sections/HeroSection.vue'
-import OurserviceSection from '@/components/sections/OurserviceSection.vue'
-import WebdesignSection from '@/components/sections/WebdesignSection.vue'
+import HeroSection from '@/components/sections/homepage/HeroSection.vue'
+import OurserviceSection from '@/components/sections/homepage/OurserviceSection.vue'
+import WebdesignSection from '@/components/sections/homepage/WebdesignSection.vue'
 </script>

@@ -1,19 +1,19 @@
 <template>
     <footer class="bg-secondbg text-white py-8">
       <div class="container mx-auto">
-        
+
         <div class="flex items-center justify-between space-x-8">
-          <!-- ส่วนที่ 1: Logo -->
+          <!-- logo meeting -->
           <div class="flex-shrink-0">
             <img src="../../assets/img/logo2.png" alt="Logo" class="w-40" />
           </div>
   
-          <!-- ส่วนที่ 2: Quote -->
+          <!-- quote -->
           <div class="flex-1 text-center">
             <p class="text-lg">"Meeting Your Vision, with Creative Solutions"</p>
           </div>
   
-          <!-- Social Buttons -->
+          <!-- social buttons -->
           <div class="flex space-x-4">
             <a href="https://www.facebook.com/meetingcreative" class="icon-button" target="_blank">
               <Icon icon="fa-brands:facebook-f" />
@@ -30,10 +30,10 @@
           </div>
         </div>
   
-        <!-- Divider -->
+        <!-- divider -->
         <hr class="border-gray-600 my-6" />
   
-        <!-- Copyright -->
+        <!-- copyright -->
         <div class="text-center">
           <p class="text-sm text-gray-400">
             &copy; Copyright 2024 Meeting Creative All rights reserved.

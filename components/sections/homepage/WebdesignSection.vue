@@ -80,7 +80,7 @@ import "swiper/css/effect-coverflow";
 // Img placeholder
 const projectImages = [
   "https://backend.meeting.co.th/storage/5282/65604b75e2c33_653b7730dd6d4_colon-p.webp",
-  "https://backend.meeting.co.th/storage/5281/65604b6f1cc44_653b77d2b04e8_taifah.webp",
+  "https://backend.meeting.co.th/storage/5634/6593d2738bd6a_httpsdiricats.com_13_11zon.webp",
   "https://backend.meeting.co.th/storage/6407/65b476d61ffcf_Candy.webp",
   "https://backend.meeting.co.th/storage/6408/65b49f06821e3_2.webp",
   "https://backend.meeting.co.th/storage/8018/66692fb250228_singha.webp",

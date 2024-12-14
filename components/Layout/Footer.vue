@@ -15,16 +15,16 @@
   
           <!-- ส่วนที่ 3: Social Buttons -->
           <div class="flex space-x-4">
-            <a href="#" class="icon-button">
+            <a href="https://www.facebook.com/meetingcreative" class="icon-button" target="_blank">
               <Icon icon="fa-brands:facebook-f" />
             </a>
-            <a href="#" class="icon-button">
+            <a href="https://lin.ee/gYvfSPi" class="icon-button" target="_blank">
               <Icon icon="fa-brands:line" />
             </a>
-            <a href="#" class="icon-button">
+            <a href="tel:044-002221" class="icon-button" target="_blank">
               <Icon icon="fa-solid:phone" />
             </a>
-            <a href="#" class="icon-button">
+            <a href="mailto:https://lin.ee/gYvfSPi" class="icon-button" target="_blank">
               <Icon icon="fa-solid:envelope" />
             </a>
           </div>

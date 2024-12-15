@@ -10,7 +10,7 @@
   
           <!-- quote -->
           <div class="flex-1 text-center">
-            <p class="text-lg">"Meeting Your Vision, with Creative Solutions"</p>
+            <p class="text-lg">"EVERYDAY IS A FRESH START"</p>
           </div>
   
           <!-- social buttons -->

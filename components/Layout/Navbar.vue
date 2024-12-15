@@ -1,6 +1,6 @@
 <template>
-  <nav class="bg-navbg py-1 px-6">
-    <div class="container mx-auto flex justify-between items-center">
+  <nav class="sticky top-0 left-0 right-0 z-50 bg-navbg py-1 px-6">
+    <div class="container  mx-auto flex justify-between items-center">
       <!-- Logo -->
       <nuxt-link to="/" class="text-gold font-bold text-xl">
         <img
@@ -64,7 +64,7 @@ const toggleMenu = () => {
 
 <style scoped>
 ul {
-  z-index: 100;
+  z-index: 10;
 }
 
 .router-link-exact-active {

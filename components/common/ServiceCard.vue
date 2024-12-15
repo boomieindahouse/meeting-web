@@ -1,5 +1,5 @@
 <template>
-    <div class="service-card bg-white text-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all">
+    <div class="service-card bg-zinc-900 text-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all">
       <!-- แสดงไอคอนแทนรูป -->
       <div class="icon mb-4 text-primary text-5xl flex justify-center items-center">
         <Icon :icon="icon" />

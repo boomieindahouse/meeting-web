@@ -77,6 +77,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 
 const projectImages = [
+  // 'https://meeting.co.th/images/348.png',
   'https://placehold.co/800x500?text=Project+1',
   'https://placehold.co/800x500?text=Project+2',
   'https://placehold.co/800x500?text=Project+3',

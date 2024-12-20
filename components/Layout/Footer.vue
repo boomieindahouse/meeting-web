@@ -1,67 +1,75 @@
 <template>
-    <footer class="bg-secondbg text-white py-8">
-      <div class="container mx-auto">
-
-        <div class="flex items-center justify-between space-x-8">
-          <!-- logo meeting -->
-          <div class="flex-shrink-0">
-            <img src="../../assets/img/logo2.png" alt="Logo" class="w-40" />
-          </div>
-  
-          <!-- quote -->
-          <div class="flex-1 text-center">
-            <p class="text-lg">"EVERYDAY IS A FRESH START"</p>
-          </div>
-  
-          <!-- social buttons -->
-          <div class="flex space-x-4">
-            <a href="https://www.facebook.com/meetingcreative" class="icon-button" target="_blank">
-              <Icon icon="fa-brands:facebook-f" />
-            </a>
-            <a href="https://lin.ee/gYvfSPi" class="icon-button" target="_blank">
-              <Icon icon="fa-brands:line" />
-            </a>
-            <a href="tel:044-002221" class="icon-button" target="_blank">
-              <Icon icon="fa-solid:phone" />
-            </a>
-            <a href="mailto:https://lin.ee/gYvfSPi" class="icon-button" target="_blank">
-              <Icon icon="fa-solid:envelope" />
-            </a>
-          </div>
+  <footer class="bg-secondbg text-white py-8">
+    <div class="container mx-auto">
+      <div
+        class="flex flex-col sm:flex-row items-center justify-between"
+      >
+        <!-- logo meeting -->
+        <div class="flex-shrink-0">
+          <img src="../../assets/img/logo2.png" alt="Logo" class="w-40" />
         </div>
-  
-        <!-- divider -->
-        <hr class="border-gray-600 my-6" />
-  
-        <!-- copyright -->
-        <div class="text-center">
-          <p class="text-sm text-gray-400">
-            &copy; Copyright 2024 Meeting Creative All rights reserved.
-          </p>
+
+        <!-- quote -->
+        <div class="flex-1 text-center mt-3">
+          <p class="text-lg">"EVERYDAY IS A FRESH START"</p>
+        </div>
+
+        <!-- social buttons -->
+        <div class="flex space-x-4 mt-5">
+          <a
+            href="https://www.facebook.com/meetingcreative"
+            class="icon-button"
+            target="_blank"
+          >
+            <Icon icon="fa-brands:facebook-f" />
+          </a>
+          <a href="https://lin.ee/gYvfSPi" class="icon-button" target="_blank">
+            <Icon icon="fa-brands:line" />
+          </a>
+          <a href="tel:044-002221" class="icon-button" target="_blank">
+            <Icon icon="fa-solid:phone" />
+          </a>
+          <a
+            href="mailto:https://lin.ee/gYvfSPi"
+            class="icon-button"
+            target="_blank"
+          >
+            <Icon icon="fa-solid:envelope" />
+          </a>
         </div>
       </div>
-    </footer>
-  </template>
-  
-  <script setup>
-  import { Icon } from '@iconify/vue'
-  </script>
-  
-  <style scoped>
-  .icon-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35px; 
-    height: 35px; 
-    border-radius: 50%; 
-    background-color: #626262; 
-    color: white;
-    transition: background-color 0.3s ease;
-  }
-  
-  .icon-button:hover {
-    background-color: #228897;
-  }
-  </style>
-  
+
+      <!-- divider -->
+      <hr class="border-gray-600 my-6" />
+
+      <!-- copyright -->
+      <div class="text-center">
+        <p class="text-sm text-gray-400">
+          &copy; Copyright 2024 Meeting Creative All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</template>
+
+<script setup>
+import { Icon } from "@iconify/vue";
+</script>
+
+<style scoped>
+.icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #626262;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.icon-button:hover {
+  background-color: #228897;
+}
+</style>

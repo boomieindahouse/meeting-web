@@ -46,7 +46,7 @@ const modules = [Navigation, Pagination, Autoplay];
           เพื่อให้ธุรกิจของคุณเติบโตบนโลกออนไลน์
         </p>
         <div
-          class="flex-col space-x-4 sm:flex-row justify-center sm:justify-start sm:space-y-0 sm:space-x-4"
+          class="flex-col space-x-3 sm:flex-row justify-center sm:justify-start sm:space-y-0 sm:space-x-4"
         >
           <a
             href="https://lin.ee/gYvfSPi"

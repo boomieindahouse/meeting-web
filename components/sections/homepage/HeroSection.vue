@@ -64,7 +64,7 @@ const modules = [Navigation, Pagination, Autoplay];
       </div>
 
       <!-- sample recent work swiper -->
-      <div class="w-full sm:w-1/2 sm:order-2 mt-10 sm:mt-0">
+      <div class="w-full sm:w-1/2 sm:order-2 mt-10 sm:mt-0 p-8 sm:p-0">
         <Swiper
           :modules="modules"
           :slides-per-view="1"

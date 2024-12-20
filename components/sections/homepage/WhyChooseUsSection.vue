@@ -8,10 +8,10 @@ const WhyChooseUs = useWhyChooseUs();
 <template>
   <section class="py-16 px-4 bg-navbg text-center">
     <div class="container mx-auto">
-      <h1 class="text-5xl sm:text-4xl font-semibold mb-4 text-transparent bg-clip-text bg-grad-text">
+      <h1 class="h1-section sm:h3-res text-transparent bg-clip-text bg-grad-text">
         Why Choose Us
       </h1>
-      <p class="text-lg text-gray-300 mb-8">
+      <p class="sm:p-res mb-8 text-lg sm:text-xl text-white">
         เหตุผลที่คุณควรเลือก Meeting Creative
       </p>
 

@@ -1,3 +1,10 @@
+<script setup>
+import HeroSection from '@/components/sections/homepage/HeroSection.vue'
+import WebdesignSection from '@/components/sections/homepage/WebdesignSection.vue'
+import GraphicdesignSection from '@/components/sections/homepage/GraphicdesignSection.vue'
+import WhyChooseUsSection from '@/components/sections/homepage/WhyChooseUsSection.vue'
+</script>
+
 <template>
   <div>
     <HeroSection />
@@ -8,12 +15,4 @@
   </div>
 </template>
 
-<script setup>
 
-// นำเข้า HeroSection จาก components/sections
-import HeroSection from '@/components/sections/homepage/HeroSection.vue'
-//  
-import WebdesignSection from '@/components/sections/homepage/WebdesignSection.vue'
-import GraphicdesignSection from '@/components/sections/homepage/GraphicdesignSection.vue'
-import WhyChooseUsSection from '@/components/sections/homepage/WhyChooseUsSection.vue'
-</script>

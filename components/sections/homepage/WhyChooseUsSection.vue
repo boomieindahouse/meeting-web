@@ -1,3 +1,10 @@
+<script setup>
+import { useWhyChooseUs } from "./composables/useWhyChooseUs";
+import { Icon } from "@iconify/vue";
+
+const WhyChooseUs = useWhyChooseUs();
+</script>
+
 <template>
   <section class="py-16 px-4 bg-navbg text-center">
     <div class="container mx-auto">
@@ -9,8 +16,8 @@
       </p>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <!-- ใช้ข้อมูลจาก useGridItems -->
-        <div v-for="item in gridItems" :key="item.title" class="bg-white p-4 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+        <!-- ใช้ข้อมูลจาก useWhyChooseUs -->
+        <div v-for="item in WhyChooseUs" :key="item.title" class="bg-white p-4 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
           <div class="flex justify-center items-center text-4xl mb-4">
             <Icon :icon="item.icon" class="text-4xl text-turqoise"></Icon>
           </div>
@@ -21,10 +28,3 @@
     </div>
   </section>
 </template>
-
-<script setup>
-import { useGridItems } from "./composables/useGridItems";
-import { Icon } from "@iconify/vue";
-
-const gridItems = useGridItems();
-</script>

@@ -1,3 +1,13 @@
+<script setup>
+import { ref } from "vue";
+
+const isMenuOpen = ref(false);
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+};
+</script>
+
 <template>
   <nav class="sticky top-0 left-0 right-0 z-50 bg-navbg py-1 px-6">
     <div class="container  mx-auto flex justify-between items-center">
@@ -51,16 +61,6 @@
     </div>
   </nav>
 </template>
-
-<script setup>
-import { ref } from "vue";
-
-const isMenuOpen = ref(false);
-
-const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value;
-};
-</script>
 
 <style scoped>
 ul {

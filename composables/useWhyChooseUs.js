@@ -1,5 +1,5 @@
-// composables/useGridItems.js
-export function useGridItems() {
+// composables/useWhyChooseUs.js
+export function useWhyChooseUs() {
   return [
     {
       title: "ประสบการณ์ที่ยาวนาน",
@@ -18,7 +18,7 @@ export function useGridItems() {
     },
     {
       title: "บริการครบวงจร",
-      description: "เรามีบริการครบวงจรที่ครอบคลุมตั้งแต่การออกแบบเว็บไซต์ กราฟิกดีไซน์ ระบบเน็ตเวิร์ค และการตลาดออนไลน์",
+      description: "เรามีบริการครบวงจรที่ครอบคลุมตั้งแต่การออกแบบเว็บไซต์ กราฟิกดีไซน์ ระบบเน็ตเวิร์ค รวมถึงการตลาดออนไลน์",
       icon: "streamline:ai-technology-spark"
     }
   ];

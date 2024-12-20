@@ -13,6 +13,19 @@ body {
   }
 }
 
+.h1-section{
+  @apply text-[40px] font-semibold mb-4;
+}
+
+@media (max-width: 640px) {
+  .sm\:h3-res {
+    @apply text-[24px] font-semibold mb-4;
+  }
+  .sm\:p-res {
+    @apply text-[16px] font-normal mb-4 mx-5;
+  }
+}
+
 @layer components {
   :root {
     --swiper-pagination-color: rgb(222, 192, 123); /* กำหนดสีที่ต้องการ */

@@ -1,3 +1,8 @@
+<script setup>
+import Navbar from '@/components/Layout/Navbar.vue'
+import Footer from '@/components/Layout/Footer.vue'
+</script>
+
 <template>
     <div>
       <!-- ใส่ Navbar ที่นี่ -->
@@ -7,8 +12,3 @@
       <Footer />
     </div>
   </template>
-  
-  <script setup>
-  import Navbar from '@/components/Layout/Navbar.vue'
-  import Footer from '@/components/Layout/Footer.vue'
-  </script>

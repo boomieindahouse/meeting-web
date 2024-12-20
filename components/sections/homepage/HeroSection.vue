@@ -1,9 +1,31 @@
+<script setup>
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Navigation, Pagination, Autoplay } from 'swiper'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/autoplay'
+
+const projectImages = [
+  // 'https://meeting.co.th/images/348.png',
+  'https://placehold.co/800x500?text=Project+1',
+  'https://placehold.co/800x500?text=Project+2',
+  'https://placehold.co/800x500?text=Project+3',
+  'https://placehold.co/800x500?text=Project+4',
+  'https://placehold.co/800x500?text=Project+5'
+]
+
+const modules = [Navigation, Pagination, Autoplay]
+</script>
+
 <template>
   <section class="bg-primarybg text-white py-10 sm:py-20 relative overflow-hidden">
     <div class="container mx-auto flex flex-col sm:flex-row items-center relative z-10">
       <!-- context hero section -->
       <div class="w-full sm:w-1/2 text-center sm:text-left sm:order-1">
-        <h1 class="text-4xl sm:text-5xl font-bold mb-4"><span class="text-transparent bg-clip-text bg-gradient-text">Meeting</span> Your Vision</h1>
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4">
+          <span class="text-transparent bg-clip-text bg-gradient-text">Meeting</span> Your Vision</h1>
         <h1 class="text-4xl sm:text-5xl font-bold mb-4">
           with
           <span class="text-transparent bg-clip-text bg-gradient-text">
@@ -67,23 +89,4 @@
   </section>
 </template>
 
-<script setup>
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Navigation, Pagination, Autoplay } from 'swiper'
 
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import 'swiper/css/autoplay'
-
-const projectImages = [
-  // 'https://meeting.co.th/images/348.png',
-  'https://placehold.co/800x500?text=Project+1',
-  'https://placehold.co/800x500?text=Project+2',
-  'https://placehold.co/800x500?text=Project+3',
-  'https://placehold.co/800x500?text=Project+4',
-  'https://placehold.co/800x500?text=Project+5'
-]
-
-const modules = [Navigation, Pagination, Autoplay]
-</script>

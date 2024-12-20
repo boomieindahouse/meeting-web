@@ -19,7 +19,7 @@
             class="flex flex-col sm:flex-row justify-center sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4"
           >
             <a
-              href="/webdesign"
+              href="/graphicdesign"
               class="bg-white hover:bg-opacity-70 text-black font-medium py-2 px-4 rounded-md"
             >
               ดูผลงานของเรา

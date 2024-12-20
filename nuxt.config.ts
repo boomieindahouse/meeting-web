@@ -19,5 +19,6 @@ export default defineNuxtConfig({
 
   ssr: false,
   modules: ['nuxt-swiper'],
+  
   compatibilityDate: '2024-12-13',
 })

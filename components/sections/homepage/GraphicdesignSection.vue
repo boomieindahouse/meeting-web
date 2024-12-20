@@ -40,7 +40,7 @@ const { modules, swiperConfig } = useSwiperConfig();
         >
           <a
             href="/graphicdesign"
-            class="bg-white hover:bg-opacity-70 text-black font-medium py-2 px-4 rounded-md"
+            class="bg-white hover:bg-opacity-70 text-black font-medium py-2 px-4 rounded-md sm:max-w-[150px] mx-auto sm:mx-0"
           >
             ดูผลงานของเรา
           </a>

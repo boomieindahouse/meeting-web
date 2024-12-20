@@ -16,6 +16,10 @@ module.exports = {
         'xl': '1280px',
         '2xl': '1536px',
       },
+      boxShadow: { 
+        'custom-light': '0 2px 4px rgba(255, 255, 255, 0.2)',
+        'custom-dark': '0 2px 4px rgba(0, 0, 0, 0.8)',
+      },
       colors: {
         gold: '#DEC07B',
         secondbg: '#2F2F2F',

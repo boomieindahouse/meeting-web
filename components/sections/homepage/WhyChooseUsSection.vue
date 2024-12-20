@@ -15,9 +15,9 @@ const WhyChooseUs = useWhyChooseUs();
         เหตุผลที่คุณควรเลือก Meeting Creative
       </p>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-4 sm:px-0">
         <!-- ใช้ข้อมูลจาก useWhyChooseUs -->
-        <div v-for="item in WhyChooseUs" :key="item.title" class="bg-white p-4 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+        <div v-for="item in WhyChooseUs" :key="item.title" class="bg-white p-4 rounded-xl shadow-custom-light hover:shadow-custom-dark transition duration-300 ease-in-out">
           <div class="flex justify-center items-center text-4xl mb-4">
             <Icon :icon="item.icon" class="text-4xl text-turqoise"></Icon>
           </div>

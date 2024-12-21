@@ -48,12 +48,12 @@ const { modules, swiperConfig } = useSwiperConfig();
       </div>
 
       <!-- ส่วนรูปภาพ Swiper -->
-      <div class="w-full mt-10">
+      <div class="w-full mt-2">
         <Swiper :modules="modules" v-bind="swiperConfig" class="w-full h-full">
           <SwiperSlide
             v-for="(image, index) in graphicProjectImages"
             :key="index"
-            class="relative group"
+            class="relative group transition-transform duration-300 sm:w-auto swiper-slide-main"
           >
             <img
               :src="image"
@@ -113,5 +113,13 @@ const { modules, swiperConfig } = useSwiperConfig();
 
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
+}
+
+.swiper-slide-main {
+  width: 280px;
+}
+
+.swiper-slide-active {
+  transform: scale(1.2);
 }
 </style>

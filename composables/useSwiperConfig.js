@@ -15,7 +15,7 @@ export function useSwiperConfig() {
       depth: 100,
       modifier: 1,
       slideShadows: false,
-      scale: 0.8,  // slides ข้างๆ จะมีขนาด 80% ของ slide ปัจจุบัน
+      scale: 0.8,
     },
     autoplay: {
       delay: 3000,

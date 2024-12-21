@@ -75,7 +75,7 @@ const { modules, swiperConfig } = useSwiperConfig();
     <!-- Modal Popup -->
     <div
       v-if="isModalOpen"
-      class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50"
+      class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 px-10 sm:px-0"
       @click="closeModal"
     >
       <div class="relative" @click.stop>

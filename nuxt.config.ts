@@ -19,6 +19,10 @@ export default defineNuxtConfig({
 
   ssr: false,
   modules: ['nuxt-swiper'],
+
+  plugins: [
+    '~/plugins/lenis.js',
+  ],
   
   compatibilityDate: '2024-12-13',
 })

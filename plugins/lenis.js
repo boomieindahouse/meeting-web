@@ -2,8 +2,8 @@ import Lenis from '@studio-freight/lenis'
 
 export default defineNuxtPlugin(nuxtApp => {
   const lenis = new Lenis({
-    smooth: true,  // เปิดโหมด scroll ที่ลื่นไหล
-    lerp: 0.1,     // ปรับค่าความลื่นไหล
+    smooth: true,  // เsmooth scroll mode
+    lerp: 0.1,     // smooth adjust
   })
 
   function raf(time) {

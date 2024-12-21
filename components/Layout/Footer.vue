@@ -1,9 +1,7 @@
 <template>
   <footer class="bg-secondbg text-white py-8">
     <div class="container mx-auto">
-      <div
-        class="flex flex-col sm:flex-row items-center justify-between"
-      >
+      <div class="flex flex-col sm:flex-row items-center justify-between">
         <!-- logo meeting -->
         <div class="flex-shrink-0">
           <img src="../../assets/img/logo2.png" alt="Logo" class="w-40" />
@@ -16,24 +14,17 @@
 
         <!-- social buttons -->
         <div class="flex space-x-4 mt-5">
-          <a
-            href="https://www.facebook.com/meetingcreative"
-            class="icon-button"
-            target="_blank"
-          >
+          <a href="https://www.facebook.com/meetingcreative" aria-label="Meeting Facebook" class="icon-button"
+            target="_blank">
             <Icon icon="fa-brands:facebook-f" class="text-gray-500" />
           </a>
-          <a href="https://lin.ee/gYvfSPi" class="icon-button" target="_blank">
+          <a href="https://lin.ee/gYvfSPi" aria-label="Meeting Line" class="icon-button" target="_blank">
             <Icon icon="fa-brands:line" class="text-gray-500" />
           </a>
-          <a href="tel:044-002221" class="icon-button" target="_blank">
+          <a href="tel:044-002221" aria-label="Meeting Telephone" class="icon-button" target="_blank">
             <Icon icon="fa-solid:phone" class="text-gray-500" />
           </a>
-          <a
-            href="mailto:https://lin.ee/gYvfSPi"
-            class="icon-button"
-            target="_blank"
-          >
+          <a href="mailto:https://lin.ee/gYvfSPi" aria-label="Meeting Email" class="icon-button" target="_blank">
             <Icon icon="fa-solid:envelope" class="text-gray-500" />
           </a>
         </div>
@@ -66,7 +57,8 @@ import { Icon } from "@iconify/vue";
   border-radius: 50%;
   background-color: #ffffff;
   color: white;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .icon-button:hover {
@@ -75,10 +67,14 @@ import { Icon } from "@iconify/vue";
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
 }
-
-
 </style>
-

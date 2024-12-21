@@ -21,10 +21,10 @@ const WhyChooseUs = useWhyChooseUs();
         <div
           v-for="item in WhyChooseUs"
           :key="item.title"
-          class="flex flex-col justify-start items-start bg-transparent text-left border-t border-gray-300 pt-6"
+          class="flex flex-col justify-start items-start bg-transparent text-left border-t border-gray-500 pt-6"
         >
           <div class="flex items-center justify-center mb-4 text-4xl text-turqoise">
-            <Icon :icon="item.icon" class="text-4xl"></Icon>
+            <Icon :icon="item.icon" class="text-5xl"></Icon>
           </div>
           <h3 class="text-lg font-semibold text-white">{{ item.title }}</h3>
           <p class="text-gray-300 text-base mt-2">{{ item.description }}</p>

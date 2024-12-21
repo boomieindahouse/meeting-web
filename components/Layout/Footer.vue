@@ -21,20 +21,20 @@
             class="icon-button"
             target="_blank"
           >
-            <Icon icon="fa-brands:facebook-f" />
+            <Icon icon="fa-brands:facebook-f" class="text-gray-500" />
           </a>
           <a href="https://lin.ee/gYvfSPi" class="icon-button" target="_blank">
-            <Icon icon="fa-brands:line" />
+            <Icon icon="fa-brands:line" class="text-gray-500" />
           </a>
           <a href="tel:044-002221" class="icon-button" target="_blank">
-            <Icon icon="fa-solid:phone" />
+            <Icon icon="fa-solid:phone" class="text-gray-500" />
           </a>
           <a
             href="mailto:https://lin.ee/gYvfSPi"
             class="icon-button"
             target="_blank"
           >
-            <Icon icon="fa-solid:envelope" />
+            <Icon icon="fa-solid:envelope" class="text-gray-500" />
           </a>
         </div>
       </div>
@@ -64,12 +64,21 @@ import { Icon } from "@iconify/vue";
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background-color: #626262;
+  background-color: #ffffff;
   color: white;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .icon-button:hover {
-  background-color: #228897;
+  box-shadow: rgba(255, 255, 255, 0.24) 0px 5px 8px;
+  animation: bounce 0.5s ease-in-out;
 }
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+
 </style>
+

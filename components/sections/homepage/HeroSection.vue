@@ -28,13 +28,13 @@ const modules = [Navigation, Pagination, Autoplay];
     >
       <!-- context hero section -->
       <div class="w-full sm:w-1/2 text-center sm:text-left sm:order-1">
-        <h1 class="text-4xl sm:h3-bold font-bold mb-4">
+        <h1 class="text-5xl sm:h3-bold font-bold mb-4">
           <span class="text-transparent bg-clip-text bg-gradient-text"
             >Meeting</span
           >
           Your Vision
         </h1>
-        <h1 class="text-4xl sm:h3-bold font-bold mb-4 ">
+        <h1 class="text-5xl sm:h3-bold font-bold mb-4 ">
           with
           <span class="text-transparent bg-clip-text bg-gradient-text">
             Creative

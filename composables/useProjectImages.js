@@ -27,5 +27,10 @@ export function useProjectImages() {
         "https://backend.meeting.co.th/storage/12705/675a447b5c5ec_Untitled-5.webp",
     ]);
 
-    return { webProjectImages, graphicProjectImages };
+
+    const networkProjectImages = ref([
+        "https://backend.meeting.co.th/storage/5409/656f5d3440e25_IMG_0502.jpeg",
+    ]);
+
+    return { webProjectImages, graphicProjectImages, networkProjectImages };
 }

@@ -63,6 +63,7 @@ const { modules, swiperConfig } = useSwiperConfig();
             <!-- ไอคอน Expand -->
             <button
               class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition duration-300"
+              aria-label="Expand"
               @click="openModal(image)"
             >
               <Icon icon="fluent:expand-up-right-20-filled" class="text-3xl" />

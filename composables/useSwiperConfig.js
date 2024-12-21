@@ -15,7 +15,7 @@ export function useSwiperConfig() {
       depth: 100,
       modifier: 1,
       slideShadows: true,
-      scale: 0.8,
+      scale: 0.6,
     },
     autoplay: {
       delay: 3000,

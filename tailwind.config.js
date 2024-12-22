@@ -9,6 +9,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        scroll: 'scroll 40s linear infinite',
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
       screens: {
         'sm': '640px',
         'md': '768px',
@@ -16,7 +25,7 @@ module.exports = {
         'xl': '1280px',
         '2xl': '1536px',
       },
-      boxShadow: { 
+      boxShadow: {
         'custom-light': '0 2px 4px rgba(255, 255, 255, 0.2)',
         'custom-dark': '0 2px 4px rgba(0, 0, 0, 0.8)',
       },

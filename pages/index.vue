@@ -4,6 +4,7 @@ import WebdesignSection from '@/components/sections/homepage/WebdesignSection.vu
 import GraphicdesignSection from '@/components/sections/homepage/GraphicdesignSection.vue'
 import NetworkserviceSection from '@/components/sections/homepage/NetworkserviceSection.vue'
 import WhyChooseUsSection from '@/components/sections/homepage/WhyChooseUsSection.vue'
+import ClientLogoSlider from '~/components/common/ClientLogoSlider.vue'
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import WhyChooseUsSection from '@/components/sections/homepage/WhyChooseUsSectio
     <WebdesignSection />
     <GraphicdesignSection />
     <NetworkserviceSection />
+    <ClientLogoSlider />
   </div>
 </template>
 

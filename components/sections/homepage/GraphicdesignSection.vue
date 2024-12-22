@@ -25,10 +25,7 @@ const { modules, swiperConfig } = useSwiperConfig();
           Graphic Design Services
         </h1>
         <p class="sm:p-res mb-8 text-lg sm:text-xl">
-          บริการกราฟิคดีไซน์ รับออกแบบโลโก้ แบนเนอร์ โปสเตอร์
-          ปกหนังสือสื่อสิ่งพิมพ์ต่างๆ รวมไปถึงงานออกแบบออนไลน์ <br />หน้าปก
-          Social Media ตลอดจนการวาง Branding Corporate Identity
-          ให้กับธุรกิจของคุณ
+          บริการกราฟิคดีไซน์ ออกแบบโลโก้, แบนเนอร์, ปกหนังสือ และสร้าง Branding Corporate Identity สำหรับธุรกิจคุณ
         </p>
         <div class="flex flex-col sm:flex-row justify-center sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <a href="/graphicdesign"

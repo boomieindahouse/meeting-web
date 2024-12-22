@@ -3,7 +3,9 @@ export default defineNuxtConfig({
 
   css: [
     '@/assets/css/tailwind.css',
-    '@/assets/css/styles.css'
+    '@/assets/css/styles.css',
+    'slick-carousel/slick/slick.css', // เพิ่มการโหลด CSS ของ Slick
+    'slick-carousel/slick/slick-theme.css', // เพิ่มการโหลด Theme ของ Slick
   ],
 
   postcss: {
@@ -14,7 +16,7 @@ export default defineNuxtConfig({
   },
 
   build: {
-    transpile: ['swiper'], // การทรานส์ไพล์ Swiper หากจำเป็น
+    transpile: ['swiper', 'slick-carousel'], // การทรานส์ไพล์ Slick Carousel
   },
 
   ssr: false,

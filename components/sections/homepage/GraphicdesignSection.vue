@@ -25,7 +25,7 @@ const { modules, swiperConfig } = useSwiperConfig();
           Graphic Design Services
         </h1>
         <p class="sm:p-res mb-8 text-lg sm:text-xl">
-          บริการกราฟิคดีไซน์ ออกแบบโลโก้, แบนเนอร์, ปกหนังสือ และสร้าง Branding Corporate Identity สำหรับธุรกิจคุณ
+          บริการกราฟิคดีไซน์ ออกแบบโลโก้, แบนเนอร์, โฆษณาบน Social Media และสร้าง Branding Corporate Identity สำหรับธุรกิจของคุณ
         </p>
         <div class="flex flex-col sm:flex-row justify-center sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <a href="/graphicdesign"

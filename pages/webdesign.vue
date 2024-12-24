@@ -1,4 +1,11 @@
+<script setup>
+import WebRecentworks from '@/components/sections/web-design/WebRecentworks.vue'
+
+</script>
+
 <template>
-    <h1>web design</h1>
-    <p>waiting for content, view design on figma</p>
+    <div>
+        <WebRecentworks />
+    </div>
 </template>
+

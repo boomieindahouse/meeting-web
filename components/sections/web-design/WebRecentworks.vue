@@ -1,35 +1,4 @@
-<!-- RecentWorks.vue -->
-<template>
-    <section class="works-section" ref="sectionRef">
-        <h1
-          class="h1-section sm:h3-res text-transparent bg-clip-text bg-grad-text"
-        >
-          Web Design Recent Works
-        </h1>
-      
-      <p class="works-description">
-        เรามีบริการออกแบบเว็บไซต์ที่ตอบโลกทั้งในแง่ของไซต์ที่วางขาย
-        และการใช้งานที่สะดวกหลายสำหรับทุกธุรกิจไม่ว่าจะขนาดเล็กหรือขนาดใหญ่
-      </p>
-  
-      <button class="works-button">ดูผลงานของเรา</button>
-  
-      <div class="works-container">
-        <div v-for="(work, index) in works" 
-             :key="index"
-             class="work-item"
-             :style="{ zIndex: works.length - index }"
-             :class="{ 
-               visible: work.visible,
-               exiting: work.exiting 
-             }">
-          <img :src="work.image" :alt="`Work ${index + 1}`">
-        </div>
-      </div>
-    </section>
-  </template>
-  
-  <script setup>
+<script setup>
   import { ref, onMounted, onUnmounted } from 'vue'
   import '@/assets/css/work-section.css'
   
@@ -129,3 +98,35 @@
     unlockScroll()
   })
   </script>
+
+<template>
+    <section class="works-section" ref="sectionRef">
+        <h1
+          class="h1-section sm:h3-res text-transparent bg-clip-text bg-grad-text"
+        >
+          Web Design Recent Works
+        </h1>
+      
+      <p class="works-description">
+        เรามีบริการออกแบบเว็บไซต์ที่ตอบโลกทั้งในแง่ของไซต์ที่วางขาย
+        และการใช้งานที่สะดวกหลายสำหรับทุกธุรกิจไม่ว่าจะขนาดเล็กหรือขนาดใหญ่
+      </p>
+  
+      <button class="works-button">ดูผลงานของเรา</button>
+  
+      <div class="works-container">
+        <div v-for="(work, index) in works" 
+             :key="index"
+             class="work-item"
+             :style="{ zIndex: works.length - index }"
+             :class="{ 
+               visible: work.visible,
+               exiting: work.exiting 
+             }">
+          <img :src="work.image" :alt="`Work ${index + 1}`">
+        </div>
+      </div>
+    </section>
+  </template>
+  
+  

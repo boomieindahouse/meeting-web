@@ -5,6 +5,7 @@ import GraphicdesignSection from '@/components/sections/homepage/GraphicdesignSe
 import NetworkserviceSection from '@/components/sections/homepage/NetworkserviceSection.vue'
 import WhyChooseUsSection from '@/components/sections/homepage/WhyChooseUsSection.vue'
 import ClientLogoSlider from '~/components/common/ClientLogoSlider.vue'
+import GetintouchSection from '~/components/sections/homepage/GetintouchSection.vue'
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import ClientLogoSlider from '~/components/common/ClientLogoSlider.vue'
     <GraphicdesignSection />
     <NetworkserviceSection />
     <ClientLogoSlider />
+    <GetintouchSection />
   </div>
 </template>
 

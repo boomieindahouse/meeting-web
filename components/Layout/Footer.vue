@@ -24,7 +24,7 @@
           <a href="tel:044-002221" aria-label="Meeting Telephone" class="icon-button" target="_blank">
             <Icon icon="fa-solid:phone" class="text-gray-500" />
           </a>
-          <a href="mailto:https://lin.ee/gYvfSPi" aria-label="Meeting Email" class="icon-button" target="_blank">
+          <a href="mailto:contact@meeting.co.th" aria-label="Meeting Email" class="icon-button" target="_blank">
             <Icon icon="fa-solid:envelope" class="text-gray-500" />
           </a>
         </div>

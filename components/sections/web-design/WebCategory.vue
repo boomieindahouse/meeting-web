@@ -50,23 +50,14 @@ function closeModal() {
 <template>
   <section class="py-16 px-4 bg-primarybg text-center">
     <div class="container mx-auto">
-      <h1
-        class="h1-section sm:h3-res text-transparent bg-clip-text bg-grad-text"
-      >
+      <h1 class="h1-section sm:h3-res text-transparent bg-clip-text bg-grad-text">
         Check Our Design
       </h1>
 
       <!-- Dropdown for sm res -->
       <div class="sm:hidden flex justify-center mb-8">
-        <select
-          @change="filterProjects($event.target.value)"
-          class="px-4 py-2 rounded-lg bg-gray-200 text-gray-700"
-        >
-          <option
-            v-for="category in categories"
-            :key="category"
-            :value="category"
-          >
+        <select @change="filterProjects($event.target.value)" class="px-4 py-2 rounded-lg bg-gray-200 text-gray-700">
+          <option v-for="category in categories" :key="category" :value="category">
             {{ formatCategoryName(category) }}
           </option>
         </select>
@@ -74,71 +65,39 @@ function closeModal() {
 
       <!-- Buttons for desktop view -->
       <div class="hidden sm:flex flex-wrap justify-center gap-8 mb-8">
-        <button
-          v-for="category in categories"
-          :key="category"
-          @click="filterProjects(category)"
-          :class="[
-            'px-4 py-2 rounded-lg',
-            selectedCategory === category ? ' text-gold' : ' text-white',
-          ]"
-        >
+        <button v-for="category in categories" :key="category" @click="filterProjects(category)" :class="[
+          'px-4 py-2 rounded-lg',
+          selectedCategory === category ? ' text-gold' : ' text-white',
+        ]">
           {{ formatCategoryName(category) }}
         </button>
       </div>
 
-      <div
-        class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-      >
-        <div
-          v-for="project in filteredProjects"
-          :key="project.website"
-          class="relative overflow-hidden rounded-lg shadow-lg group"
-        >
-          <img
-            :src="project.preview"
-            :alt="project.website"
-            class="w-full object-cover"
-          />
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div v-for="project in filteredProjects" :key="project.website"
+          class="relative overflow-hidden rounded-lg shadow-lg group">
+          <img :src="project.preview" :alt="project.website" class="w-full object-cover" />
           <div
-            class="absolute inset-0 bg-black bg-opacity-50 flex flex-row items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 space-x-2"
-          >
-            <button
-              class="flex justify-center items-center text-white"
-              @click="openModal(project.preview)"
-            >
+            class="absolute inset-0 bg-black bg-opacity-50 flex flex-row items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 space-x-6">
+            <button class="flex justify-center items-center text-white" @click="openModal(project.preview)">
               <Icon icon="fluent:expand-up-right-20-filled" class="text-3xl" />
             </button>
-            <a
-              :href="project.website"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="flex justify-center items-center text-white px-2 py-2 rounded-lg"
-            >
+            <a :href="project.website" target="_blank" rel="noopener noreferrer"
+              class="flex justify-center items-center text-white px-2 py-2 rounded-lg">
               <Icon icon="line-md:link" class="text-2xl" />
             </a>
           </div>
         </div>
       </div>
 
-      <div
-        v-if="isModalOpen"
+      <div v-if="isModalOpen"
         class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 px-10 sm:px-0"
-        aria-label="Expand"
-        @click="closeModal"
-      >
+        aria-label="Expand" @click="closeModal">
         <div class="relative" @click.stop>
-          <button
-            class="absolute top-2 right-2 text-white text-2xl"
-            @click="closeModal"
-          >
+          <button class="absolute top-2 right-2 text-white text-2xl" @click="closeModal">
             &times;
           </button>
-          <img
-            :src="currentImage"
-            alt="Expanded Image"
-            class="max-w-full max-h-[90vh] rounded-lg"
-          />
+          <img :src="currentImage" alt="Expanded Image" class="max-w-full max-h-[90vh] rounded-lg" />
         </div>
       </div>
     </div>

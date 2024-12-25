@@ -23,15 +23,15 @@ function formatCategoryName(category) {
   // Convert category names to more readable format (optional)
   const categoryMap = {
     all: "All",
-    company_office_organization: "Company",
-    clinic_beauty_medicine: "Clinic & Beauty",
-    online_shopping: "Online Shopping",
-    entertainment: "Entertainment",
-    government: "Government",
-    education_institution: "Education",
-    hotel_restaurant_travel: "Hotel & Restaurant",
-    village_project: "Village",
-    hospital_health_center: "Hospital & Health Center",
+    company_office_organization: "บริษัท / สำนักงาน / องค์กร",
+    clinic_beauty_medicine: "คลินิกฟัน / ความงาม / แพทย์แผนจีน",
+    online_shopping: "ช็อปปิ้งออนไลน์",
+    entertainment: "ความบันเทิง",
+    government: "ราชการ / รัฐวิสาหกิจ",
+    education_institution: "สถาบันการศึกษา",
+    hotel_restaurant_travel: "โรงแรม / ร้านอาหาร / ท่องเที่ยว",
+    village_project: "โครงการหมู่บ้าน",
+    hospital_health_center: "โรงพยาบาล / ศูนย์สุขภาพ",
   };
   return categoryMap[category] || category;
 }
@@ -81,7 +81,7 @@ function closeModal() {
           @click="filterProjects(category)"
           :class="[
             'px-4 py-1 rounded-xl hover:text-white hover:bg-turqoise hover:bg-opacity-85',
-            selectedCategory === category ? 'bg-turqoise text-white' : ' text-white',
+            selectedCategory === category ? 'bg-turqoise text-white text-[10pt]' : ' text-white text-[10pt]',
           ]"
         >
           {{ formatCategoryName(category) }}

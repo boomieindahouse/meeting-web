@@ -60,7 +60,7 @@ function closeModal() {
       <div class="sm:hidden flex justify-center mb-8">
         <select
           @change="filterProjects($event.target.value)"
-          class="px-3 py-3 rounded-lg bg-white text-black"
+          class="px-3 py-3 rounded-lg bg-white text-black text-sm"
         >
           <option
             v-for="category in categories"

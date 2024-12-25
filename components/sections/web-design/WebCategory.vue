@@ -2,10 +2,10 @@
 import { ref } from "vue";
 import { Icon } from "@iconify/vue";
 
-// Import JSON data from file
+// Import JSON data
 import jsonData from "@/static/images.json";
 
-// Extract categories from JSON data
+// isolate categories from JSON
 const categories = Object.keys(jsonData.web_design);
 const projects = jsonData.web_design;
 
@@ -20,7 +20,7 @@ function filterProjects(category) {
 }
 
 function formatCategoryName(category) {
-  // Convert category names to more readable format (optional)
+  // Convert name format
   const categoryMap = {
     all: "All",
     company_office_organization: "บริษัท / สำนักงาน / องค์กร",

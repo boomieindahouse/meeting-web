@@ -4,15 +4,14 @@
   
   const sectionRef = ref(null)
   const works = ref([
-    { image: 'https://placehold.co/800x500?text=Project+1', visible: true, exiting: false },
-    { image: 'https://placehold.co/800x500?text=Project+2', visible: false, exiting: false },
-    { image: 'https://placehold.co/800x500?text=Project+3', visible: false, exiting: false },
-    { image: 'https://placehold.co/800x500?text=Project+4', visible: false, exiting: false },
-    { image: 'https://placehold.co/800x500?text=Project+5', visible: false, exiting: false },
-    { image: 'https://placehold.co/800x500?text=Project+6', visible: false, exiting: false },
-    { image: 'https://placehold.co/800x500?text=Project+7', visible: false, exiting: false },
-    { image: 'https://placehold.co/800x500?text=Project+8', visible: false, exiting: false },
-    { image: 'https://placehold.co/800x500?text=Project+9', visible: false, exiting: false },
+    { image: 'https://backend.meeting.co.th/storage/5282/65604b75e2c33_653b7730dd6d4_colon-p.webp', visible: true, exiting: false },
+    { image: 'https://backend.meeting.co.th/storage/6408/65b49f06821e3_2.webp', visible: false, exiting: false },
+    { image: 'https://backend.meeting.co.th/storage/8018/66692fb250228_singha.webp', visible: false, exiting: false },
+    { image: 'https://backend.meeting.co.th/storage/8201/667ffed3bb1a7_mehay.webp', visible: false, exiting: false },
+    { image: 'https://backend.meeting.co.th/storage/5292/65604bc113062_653b7f7d7c7ef_you2play.webp', visible: false, exiting: false },
+    { image: 'https://backend.meeting.co.th/storage/5646/6594dd5742e41_screencapture-127-0-0-1-8000-2024-01-03-10_34_18.webp', visible: false, exiting: false },
+    { image: 'https://backend.meeting.co.th/storage/12707/675a4616599d2_thepnakorn.webp', visible: false, exiting: false },
+    { image: 'https://backend.meeting.co.th/storage/5632/6593d187eb249_httpschouchou.salemood.com_15_11zon.webp', visible: false, exiting: false },
   ])
   
   let currentIndex = 0

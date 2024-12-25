@@ -100,7 +100,7 @@
   </script>
 
 <template>
-    <section class="works-section" ref="sectionRef">
+    <section class="works-section bg-navbg" ref="sectionRef">
         <h1
           class="h1-section sm:h3-res text-transparent bg-clip-text bg-grad-text"
         >
@@ -108,11 +108,9 @@
         </h1>
       
       <p class="works-description">
-        เรามีบริการออกแบบเว็บไซต์ที่ตอบโลกทั้งในแง่ของไซต์ที่วางขาย
-        และการใช้งานที่สะดวกหลายสำหรับทุกธุรกิจไม่ว่าจะขนาดเล็กหรือขนาดใหญ่
+        เรามีบริการออกแบบเว็บไซต์ที่ตอบโจทย์ทั้งในแง่ของการดีไซน์ที่สวยงาม
+        และการใช้งานที่สะดวกสบายสำหรับทุกธุรกิจไม่ว่าจะขนาดเล็กหรือขนาดใหญ่
       </p>
-  
-      <button class="works-button">ดูผลงานของเรา</button>
   
       <div class="works-container">
         <div v-for="(work, index) in works" 

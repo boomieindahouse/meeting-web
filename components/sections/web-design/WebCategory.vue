@@ -60,12 +60,17 @@ function closeModal() {
       <div class="sm:hidden flex justify-center mb-8">
         <select
           @change="filterProjects($event.target.value)"
-          class="px-4 py-2 rounded-lg bg-gray-200 text-gray-700"
+          class="px-2 py-2 rounded-lg bg-white text-gold"
         >
           <option
             v-for="category in categories"
             :key="category"
             :value="category"
+            @click="filterProjects(category)"
+            :class="[
+              'px-4 py-2 rounded-lg',
+              selectedCategory === category ? ' text-gold' : ' text-black',
+            ]"
           >
             {{ formatCategoryName(category) }}
           </option>

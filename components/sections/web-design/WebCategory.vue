@@ -1,9 +1,13 @@
 <template>
-  <section class="py-16 px-4 bg-gray-100 text-center">
+  <section class="py-16 px-4 bg-primarybg text-center">
     <div class="container mx-auto">
-      <h1 class="text-3xl sm:text-4xl font-bold mb-8">Our Works: Web Design</h1>
+      <h1
+          class="h1-section sm:h3-res text-transparent bg-clip-text bg-grad-text"
+        >
+          Check Our Design
+        </h1>
 
-      <div class="flex flex-wrap justify-center gap-4 mb-8">
+      <div class="hidden sm:flex flex-wrap justify-center gap-8 mb-8">
         <button
           v-for="category in categories"
           :key="category"
@@ -11,12 +15,27 @@
           :class="[
             'px-4 py-2 rounded-lg',
             selectedCategory === category
-              ? 'bg-blue-500 text-white'
-              : 'bg-gray-200 text-gray-700',
+              ? ' text-gold'
+              : ' text-white',
           ]"
         >
           {{ formatCategoryName(category) }}
         </button>
+      </div>
+
+      <div class="sm:hidden flex justify-center mb-8">
+        <select
+          @change="filterProjects($event.target.value)"
+          class="px-4 py-2 rounded-lg bg-gray-200 text-gray-700"
+        >
+          <option 
+            v-for="category in categories" 
+            :key="category" 
+            :value="category"
+          >
+            {{ formatCategoryName(category) }}
+          </option>
+        </select>
       </div>
 
       <div
@@ -30,13 +49,13 @@
           <img
             :src="project.preview"
             :alt="project.website"
-            class="w-full h-40 object-cover"
+            class="w-full object-cover"
           />
           <div
             class="absolute inset-0 bg-black bg-opacity-50 flex flex-row items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 space-x-2"
           >
             <button
-              class="flex justify-center items-center text-white"
+              class="flex justify-center items-center bg-white text-black rounded-full p-2"
               @click="openModal(project.preview)"
             >
               <Icon icon="fluent:expand-up-right-20-filled" class="text-3xl" />
@@ -45,7 +64,7 @@
               :href="project.website"
               target="_blank"
               rel="noopener noreferrer"
-              class="flex justify-center items-center text-white px-2 py-2 rounded-lg"
+              class="flex justify-center items-center bg-white text-black rounded-full p-2"
             >
               <Icon icon="line-md:link" class="text-2xl" />
             </a>

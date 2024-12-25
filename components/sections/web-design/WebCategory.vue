@@ -60,7 +60,7 @@ function closeModal() {
       <div class="sm:hidden flex justify-center mb-8">
         <select
           @change="filterProjects($event.target.value)"
-          class="px-3 py-3 rounded-lg bg-white text-turqoise"
+          class="px-3 py-3 rounded-lg bg-white text-black"
         >
           <option
             v-for="category in categories"
@@ -80,8 +80,8 @@ function closeModal() {
           :key="category"
           @click="filterProjects(category)"
           :class="[
-            'px-4 py-2 rounded-lg hover:text-gold',
-            selectedCategory === category ? ' text-gold' : ' text-white',
+            'px-4 py-1 rounded-xl hover:text-white hover:bg-turqoise hover:bg-opacity-85',
+            selectedCategory === category ? 'bg-turqoise text-white' : ' text-white',
           ]"
         >
           {{ formatCategoryName(category) }}

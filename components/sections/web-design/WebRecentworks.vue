@@ -103,7 +103,7 @@
         <h1
           class="h1-section sm:h3-res text-transparent bg-clip-text bg-grad-text"
         >
-          Web Design Recent Works
+          Web Design
         </h1>
       
       <p class="works-description">

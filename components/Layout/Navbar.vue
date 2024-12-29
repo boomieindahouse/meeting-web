@@ -66,7 +66,7 @@ onUnmounted(() => {
           <router-link to="/webdesign" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu">Web Design</router-link>
         </li>
         <li class="py-2 text-center">
-          <router-link to="/graphic-design" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu">Graphic Design</router-link>
+          <router-link to="/graphicdesign" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu">Graphic Design</router-link>
         </li>
         <li class="py-2 text-center">
           <router-link to="/network-service" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu">Network Service</router-link>

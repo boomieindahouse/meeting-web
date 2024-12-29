@@ -36,7 +36,7 @@ onUnmounted(() => {
   <nav ref="navRef" class="sticky top-0 left-0 right-0 z-50 bg-navbg py-1 px-6">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo -->
-      <nuxt-link to="/" class="text-gold font-bold text-xl" @click="closeMenu">
+      <nuxt-link to="/" class="text-gold font-bold text-xl" @click="closeMenu; scrollToTop()">
         <img
           src="../../assets/img/logo2.png"
           alt="Meeting Creative"

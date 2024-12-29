@@ -19,6 +19,10 @@ const closeMenu = () => {
   isMenuOpen.value = false;
 };
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 onMounted(() => {
   document.addEventListener('click', handleClickOutside);
 });
@@ -52,30 +56,30 @@ onUnmounted(() => {
 
       <!-- Nav menu -->
       <ul
-        :class="[
-          'lg:flex lg:space-x-10 lg:flex-row',
+        :class="[ 
+          'lg:flex lg:space-x-10 lg:flex-row', 
           isMenuOpen 
-            ? 'flex flex-col space-y-4 absolute top-16 left-0 w-full bg-navbg p-4'
-            : 'hidden'
+            ? 'flex flex-col space-y-4 absolute top-16 left-0 w-full bg-navbg p-4' 
+            : 'hidden' 
         ]"
       >
         <li class="py-2 text-center">
-          <router-link to="/" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu">Home</router-link>
+          <router-link to="/" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu; scrollToTop()">Home</router-link>
         </li>
         <li class="py-2 text-center">
-          <router-link to="/about" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu">About Us</router-link>
+          <router-link to="/about" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu; scrollToTop()">About Us</router-link>
         </li>
         <li class="py-2 text-center">
-          <router-link to="/webdesign" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu">Web Design</router-link>
+          <router-link to="/webdesign" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu; scrollToTop()">Web Design</router-link>
         </li>
         <li class="py-2 text-center">
-          <router-link to="/graphicdesign" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu">Graphic Design</router-link>
+          <router-link to="/graphicdesign" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu; scrollToTop()">Graphic Design</router-link>
         </li>
         <li class="py-2 text-center">
-          <router-link to="/network-service" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu">Network Service</router-link>
+          <router-link to="/network-service" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu; scrollToTop()">Network Service</router-link>
         </li>
         <li class="py-2 text-center">
-          <router-link to="/contact" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu">Contact</router-link>
+          <router-link to="/contact" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu; scrollToTop()">Contact</router-link>
         </li>
       </ul>
     </div>

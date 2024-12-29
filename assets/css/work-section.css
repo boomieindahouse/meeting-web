@@ -1,4 +1,8 @@
 /* works-section.css */
+body.scroll-lock {
+  overflow: hidden;
+}
+
 .works-section {
   min-height: 100vh;
   background-color: #1a1a1a;

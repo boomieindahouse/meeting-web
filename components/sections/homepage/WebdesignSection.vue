@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 
-// ใช้ Composables
+// Composables
 const { isModalOpen, currentImage, openModal, closeModal } = useModal();
 const { webProjectImages } = useProjectImages();
 const { modules, swiperConfig } = useSwiperConfig();

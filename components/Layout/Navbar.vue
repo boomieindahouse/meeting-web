@@ -64,22 +64,22 @@ onUnmounted(() => {
         ]"
       >
         <li class="py-2 text-center">
-          <router-link to="/" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu; scrollToTop()">Home</router-link>
+          <router-link to="/" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu(); scrollToTop()">Home</router-link>
         </li>
         <li class="py-2 text-center">
-          <router-link to="/about" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu; scrollToTop()">About Us</router-link>
+          <router-link to="/about" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu(); scrollToTop()">About Us</router-link>
         </li>
         <li class="py-2 text-center">
-          <router-link to="/webdesign" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu; scrollToTop()">Web Design</router-link>
+          <router-link to="/webdesign" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu(); scrollToTop()">Web Design</router-link>
         </li>
         <li class="py-2 text-center">
-          <router-link to="/graphicdesign" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu; scrollToTop()">Graphic Design</router-link>
+          <router-link to="/graphicdesign" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu(); scrollToTop()">Graphic Design</router-link>
         </li>
         <li class="py-2 text-center">
-          <router-link to="/network-service" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu; scrollToTop()">Network Service</router-link>
+          <router-link to="/network-service" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu(); scrollToTop()">Network Service</router-link>
         </li>
         <li class="py-2 text-center">
-          <router-link to="/contact" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu; scrollToTop()">Contact</router-link>
+          <router-link to="/contact" active-class="text-gold" exact class="text-white hover:text-gold" @click="closeMenu(); scrollToTop()">Contact</router-link>
         </li>
       </ul>
     </div>

@@ -53,7 +53,7 @@ function closeModal() {
       <h1
         class="h1-section sm:h3-res text-transparent bg-clip-text bg-grad-text"
       >
-        Check Our Design
+        Check Our Web Design
       </h1>
 
       <!-- Dropdown for sm res -->

@@ -5,8 +5,8 @@
         <!-- Grid Section -->
         <div class="grid grid-cols-1 md:grid-cols-2">
           <!-- Contact Details -->
-          <div class="bg-white p-8 lg:p-12 contact-left">
-            <div class="max-w-md">
+          <div class="bg-white p-4 lg:p-10 contact-left">
+            <div class="max-w-2xl">
               <!-- Logo -->
               <div class="flex justify-center mb-8">
                 <img
@@ -30,7 +30,7 @@
               <!-- Facebook -->
               <div class="flex items-center gap-6 mb-8">
                 <div class="text-turqoise flex-shrink-0">
-                  <Icon icon="ri:facebook-fill" class="text-4xl" />
+                  <Icon icon="iconoir:facebook" class="text-4xl" />
                 </div>
                 <a
                   href="https://facebook.com/MeetingCreative"
@@ -43,7 +43,7 @@
               <!-- Line -->
               <div class="flex items-center gap-6 mb-8">
                 <div class="text-turqoise flex-shrink-0">
-                  <Icon icon="uil:line" class="text-4xl" />
+                  <Icon icon="la:line" class="text-4xl" />
                 </div>
                 <a
                   href="https://lin.ee/gYvfSPi"

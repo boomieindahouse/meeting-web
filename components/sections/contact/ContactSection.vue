@@ -30,7 +30,7 @@
               <!-- Facebook -->
               <div class="flex items-center gap-6 mb-8">
                 <div class="text-turqoise flex-shrink-0">
-                  <Icon icon="mdi:facebook" class="text-4xl" />
+                  <Icon icon="ri:facebook-fill" class="text-4xl" />
                 </div>
                 <a
                   href="https://facebook.com/MeetingCreative"
@@ -43,10 +43,10 @@
               <!-- Line -->
               <div class="flex items-center gap-6 mb-8">
                 <div class="text-turqoise flex-shrink-0">
-                  <Icon icon="ri:line-fill" class="text-4xl" />
+                  <Icon icon="uil:line" class="text-4xl" />
                 </div>
                 <a
-                  href="#"
+                  href="https://lin.ee/gYvfSPi"
                   class="text-gray-700 text-lg hover:text-teal-600 transition-colors"
                 >
                   Line
@@ -69,7 +69,7 @@
               <!-- Email -->
               <div class="flex items-center gap-6">
                 <div class="text-turqoise flex-shrink-0">
-                  <Icon icon="material-symbols:mail" class="text-4xl" />
+                  <Icon icon="tabler:mail" class="text-4xl" />
                 </div>
                 <a
                   href="mailto:contact@meeting.co.th"

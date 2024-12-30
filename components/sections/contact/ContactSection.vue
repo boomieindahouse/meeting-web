@@ -35,6 +35,7 @@
                 <a
                   href="https://facebook.com/MeetingCreative"
                   class="text-gray-700 text-lg hover:text-teal-600 transition-colors"
+                  target="_blank"
                 >
                   Meeting Creative
                 </a>
@@ -48,6 +49,7 @@
                 <a
                   href="https://lin.ee/gYvfSPi"
                   class="text-gray-700 text-lg hover:text-teal-600 transition-colors"
+                  target="_blank"
                 >
                   Line
                 </a>
@@ -74,6 +76,7 @@
                 <a
                   href="mailto:contact@meeting.co.th"
                   class="text-gray-700 text-lg hover:text-teal-600 transition-colors"
+                  target="_blank"
                 >
                   contact@meeting.co.th
                 </a>

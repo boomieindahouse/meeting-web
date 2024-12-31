@@ -35,7 +35,7 @@ function handleCustomScroll(event) {
 
       event.preventDefault();
     } else if (currentIndex === works.value.length - 1) {
-      // เมื่อถึงรูปสุดท้าย ให้ปลดล็อก Lenis
+      //ถึงรูปสุดท้ายแล้วปลดล็อก Lenis
       $lenis.start();
     }
   } else if (event.deltaY < 0) {
@@ -54,7 +54,7 @@ function handleCustomScroll(event) {
 
       event.preventDefault();
     } else if (currentIndex === 0) {
-      // เมื่อ scroll ขึ้นถึงรูปแรก ให้ปล่อยให้ Lenis scroll กลับขึ้นไปได้
+      //scroll ขึ้นถึงรูปแรกคืน lenis ขึ้นไป รอแก้ bug lenis ไม่ scroll ตาม prototype
       $lenis.start();
     }
   }

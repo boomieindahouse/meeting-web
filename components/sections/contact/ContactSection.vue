@@ -21,7 +21,7 @@
                 <div class="text-turqoise flex-shrink-0">
                   <Icon icon="basil:location-outline" class="text-4xl" />
                 </div>
-                <p class="text-gray-700 text-lg">
+                <p class="text-gray-700 text-sm sm:text-base">
                   555/126 ศุภาลัย เบลล่า หมู่ 4 ต.จอหอ อ.เมือง จ.นครราชสีมา
                   30310
                 </p>
@@ -34,7 +34,7 @@
                 </div>
                 <a
                   href="https://facebook.com/MeetingCreative"
-                  class="text-gray-700 text-lg hover:text-teal-600 transition-colors"
+                  class="text-gray-700 text-sm sm:text-base hover:text-teal-600 transition-colors"
                   target="_blank"
                 >
                   Meeting Creative
@@ -48,7 +48,7 @@
                 </div>
                 <a
                   href="https://lin.ee/gYvfSPi"
-                  class="text-gray-700 text-lg hover:text-teal-600 transition-colors"
+                  class="text-gray-700 text-sm sm:text-base hover:text-teal-600 transition-colors"
                   target="_blank"
                 >
                   Line
@@ -62,7 +62,7 @@
                 </div>
                 <a
                   href="tel:044-002221"
-                  class="text-gray-700 text-lg hover:text-teal-600 transition-colors"
+                  class="text-gray-700 text-sm sm:text-base hover:text-teal-600 transition-colors"
                 >
                   044-002221
                 </a>
@@ -75,7 +75,7 @@
                 </div>
                 <a
                   href="mailto:contact@meeting.co.th"
-                  class="text-gray-700 text-lg hover:text-teal-600 transition-colors"
+                  class="text-gray-700 text-sm sm:text-base hover:text-teal-600 transition-colors"
                   target="_blank"
                 >
                   contact@meeting.co.th

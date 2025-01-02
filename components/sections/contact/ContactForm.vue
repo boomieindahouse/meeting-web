@@ -16,25 +16,31 @@
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <!-- Name -->
             <div>
+              <label class="block text-left text-white mb-1">
+                Your Name <span class="text-red-500">*</span>
+              </label>
               <input
                 type="text"
-                placeholder="Your Name *"
                 class="w-full bg-secondbg text-white rounded-lg px-4 py-2 focus:ring-2 focus:ring-turqoise focus:outline-none"
               />
             </div>
             <!-- Email -->
             <div>
+              <label class="block text-left text-white mb-1">
+                Your Email <span class="text-red-500">*</span>
+              </label>
               <input
                 type="email"
-                placeholder="Your Email *"
                 class="w-full bg-secondbg text-white rounded-lg px-4 py-2 focus:ring-2 focus:ring-turqoise focus:outline-none"
               />
             </div>
             <!-- Phone -->
             <div>
+              <label class="block text-left text-white mb-1">
+                Your Phone <span class="text-red-500">*</span>
+              </label>
               <input
                 type="tel"
-                placeholder="Your Phone *"
                 class="w-full bg-secondbg text-white rounded-lg px-4 py-2 focus:ring-2 focus:ring-turqoise focus:outline-none"
               />
             </div>
@@ -42,8 +48,10 @@
   
           <!-- Message -->
           <div>
+            <label class="block text-left text-white mb-1">
+              Your Message
+            </label>
             <textarea
-              placeholder="Your Message"
               rows="5"
               class="w-full bg-secondbg text-white rounded-lg px-4 py-2 focus:ring-2 focus:ring-turqoise focus:outline-none"
             ></textarea>
@@ -60,12 +68,4 @@
       </div>
     </section>
   </template>
-  
-  <script setup>
-  // ไม่ต้องเพิ่ม script ใดๆ ถ้าไม่มี logic
-  </script>
-  
-  <style scoped>
-  /* คุณสามารถเพิ่ม CSS เพิ่มเติมถ้าจำเป็น */
-  </style>
   

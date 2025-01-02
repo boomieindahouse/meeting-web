@@ -40,7 +40,7 @@ onUnmounted(() => {
         <img
           src="../../assets/img/logo2.png"
           alt="Meeting Creative"
-          class="h-16"
+          class="h-14"
         />
       </nuxt-link>
 

@@ -50,7 +50,7 @@ const modules = [Navigation, Pagination, Autoplay];
         >
           <a
             href="https://lin.ee/gYvfSPi"
-            class="bg-turqoise hover:bg-opacity-60 text-white font-medium py-2 px-5 rounded-md max-w-xs sm:max-w-[150px] mx-auto sm:mx-0"
+            class="bg-turqoise hover:bg-cyan-600 text-white font-medium py-2 px-5 rounded-md max-w-xs sm:max-w-[150px] mx-auto sm:mx-0"
           >
             ติดต่อแอดไลน์
           </a>

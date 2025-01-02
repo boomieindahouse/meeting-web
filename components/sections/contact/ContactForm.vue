@@ -1,0 +1,71 @@
+<template>
+    <section class="bg-primarybg text-white py-16 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Title -->
+        <h1
+          class="h1-section sm:h3-res text-transparent bg-clip-text bg-grad-text"
+        >
+          Drop Us a Line
+        </h1>
+        <p class="sm:p-res mb-8 text-lg sm:text-xl text-white">
+          ติดต่อเราได้โดยใช้แบบฟอร์มนี้และเราจะติดต่อกลับหาคุณในเร็ว ๆ นี้
+        </p>
+  
+        <!-- Form -->
+        <form class="mt-8 space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Name -->
+            <div>
+              <input
+                type="text"
+                placeholder="Your Name *"
+                class="w-full bg-secondbg text-white rounded-lg px-4 py-2 focus:ring-2 focus:ring-turqoise focus:outline-none"
+              />
+            </div>
+            <!-- Email -->
+            <div>
+              <input
+                type="email"
+                placeholder="Your Email *"
+                class="w-full bg-secondbg text-white rounded-lg px-4 py-2 focus:ring-2 focus:ring-turqoise focus:outline-none"
+              />
+            </div>
+            <!-- Phone -->
+            <div>
+              <input
+                type="tel"
+                placeholder="Your Phone *"
+                class="w-full bg-secondbg text-white rounded-lg px-4 py-2 focus:ring-2 focus:ring-turqoise focus:outline-none"
+              />
+            </div>
+          </div>
+  
+          <!-- Message -->
+          <div>
+            <textarea
+              placeholder="Your Message"
+              rows="5"
+              class="w-full bg-secondbg text-white rounded-lg px-4 py-2 focus:ring-2 focus:ring-turqoise focus:outline-none"
+            ></textarea>
+          </div>
+  
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="bg-turqoise hover:bg-cyan-600 text-white font-semibold py-2 px-8 rounded-lg transition duration-300"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  </template>
+  
+  <script setup>
+  // ไม่ต้องเพิ่ม script ใดๆ ถ้าไม่มี logic
+  </script>
+  
+  <style scoped>
+  /* คุณสามารถเพิ่ม CSS เพิ่มเติมถ้าจำเป็น */
+  </style>
+  

@@ -7,7 +7,7 @@
           Contact Us
         </h1>
   
-      <p class="text-white">
+      <p class="sm:p-res my-4 text-lg sm:text-xl text-white">
         ช่องทางการติดต่อเรา สามารถติดต่อเราได้ทุกช่องทาง <br>เราพร้อมยินดีให้คำปรึกษา และเคียงข้างคุณ
       </p>
       </div>

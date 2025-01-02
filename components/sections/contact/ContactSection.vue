@@ -5,10 +5,10 @@
         <!-- Grid Section -->
         <div class="grid grid-cols-1 md:grid-cols-2">
           <!-- Contact Details -->
-          <div class="bg-white p-4 lg:p-10 contact-left">
+          <div class="bg-white h-[460px] p-5 contact-left">
             <div class="max-w-2xl">
               <!-- Logo -->
-              <div class="flex justify-center mb-8">
+              <div class="flex justify-center my-6 sm:mb-10 sm:my-0 md:my-6">
                 <img
                   src="/assets/img/logo.png"
                   alt="Meeting Creative"
@@ -85,7 +85,7 @@
           </div>
 
           <!-- Map Section -->
-          <div class="h-[500px] w-full relative">
+          <div class="h-[460px] w-full relative">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3853.170148301632!2d102.14998617577089!3d15.03870226619935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311eb350870116fd%3A0x62cde3bdef665fb4!2zTWVldGluZyBDcmVhdGl2ZSBDby4sIEx0ZC4gLSDguJrguKPguLTguKnguLHguJcg4Lih4Li14LiV4LiV4Li04LmJ4LiHIOC4hOC4o-C4teC5gOC4reC4l-C4teC4nyDguIjguLPguIHguLHguJQ!5e0!3m2!1sen!2sth!4v1735582867281!5m2!1sen!2sth"
               class="w-full h-full contact-right"

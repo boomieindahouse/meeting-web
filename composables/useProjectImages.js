@@ -30,6 +30,8 @@ export function useProjectImages() {
 
     const networkProjectImages = ref([
         "https://backend.meeting.co.th/storage/5409/656f5d3440e25_IMG_0502.jpeg",
+        "https://i.imgur.com/gkRDAz0.jpeg",
+        "https://i.imgur.com/Y6FqWbk.jpeg"
     ]);
 
     return { webProjectImages, graphicProjectImages, networkProjectImages };

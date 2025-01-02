@@ -56,7 +56,6 @@ import { Icon } from "@iconify/vue";
   height: 35px;
   border-radius: 50%;
   background-color: #ffffff;
-  color: white;
   transition: background-color 0.3s ease, transform 0.3s ease,
     box-shadow 0.3s ease;
 }
